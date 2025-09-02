@@ -65,7 +65,7 @@ export default {
   justify-content: space-between;
 }
 
-// Type
+/* Type */
 .h2 {
   font-size: 21px;
 }
@@ -86,7 +86,7 @@ export default {
   align-items: center;
 }
 
-// Buttons
+/* Buttons */
 button {
   appearance: none;
   padding: 10px;
@@ -94,7 +94,7 @@ button {
   font-weight: bold;
   border-radius: 10px;
   border: none;
-  background: $color-grey;
+  background: #888;
   color: white;
   white-space: nowrap;
 
@@ -124,7 +124,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.25);
 
   > li {
-    color: $color-grey;
+    color: #888;
     margin-bottom: 4px;
   }
 }
