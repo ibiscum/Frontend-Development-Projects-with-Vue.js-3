@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import Exercise from "@/components/Exercise1-03-v-show.vue";
+import Exercise from "../../src/components/Exercise1-03.vue";
 import { describe, it, expect } from "vitest";
 
 describe("Exercise1-03-v-show.vue", () => {
