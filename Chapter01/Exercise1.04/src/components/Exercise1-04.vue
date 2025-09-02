@@ -3,11 +3,17 @@
     <div class="form">
       <label>
         Name
-        <input type="text" v-model="name" />
+        <input
+          v-model="name"
+          type="text"
+        >
       </label>
       <label>
         Preferred javascript style
-        <select name="language" v-model="language">
+        <select
+          v-model="language"
+          name="language"
+        >
           <option value="Javascript">JavaScript</option>
           <option value="TypeScript">TypeScript</option>
           <option value="CoffeeScript">CoffeeScript</option>
