@@ -2,7 +2,10 @@
   <div>
     <h1>Looping through arrays</h1>
     <ul>
-      <li v-for="(item, n) in interests" :key="n">
+      <li
+        v-for="(item, n) in interests"
+        :key="n"
+      >
         {{ item }}
       </li>
     </ul>

@@ -18,10 +18,16 @@ const interests = [
   <div>
     <h1>Looping through array of objects</h1>
     <ul>
-      <li v-for="(item, n) in interests" :key="n">
+      <li
+        v-for="(item, n) in interests"
+        :key="n"
+      >
         {{ item.title }}
         <ol v-if="item.favorites.length > 0">
-          <li v-for="(fav, m) in item.favorites" :key="m">
+          <li
+            v-for="(fav, m) in item.favorites"
+            :key="m"
+          >
             {{ fav }}
           </li>
         </ol>
