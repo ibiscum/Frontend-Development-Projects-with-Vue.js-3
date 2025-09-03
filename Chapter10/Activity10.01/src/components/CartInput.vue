@@ -4,21 +4,24 @@ const store = useCartStore()
 </script>
 
 <template>
-<h2>Cart</h2>
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Quantity</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr v-for="(product, idx) in store.cart" :key="idx">
+  <h2>Cart</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        v-for="(product, idx) in store.cart"
+        :key="idx"
+	  >
 		<td>{{ product.name }}</td>
 		<td>{{ product.quantity  }}</td>
-	</tr>
+	  </tr>
 	</tbody>
-</table>
+  </table>
 </template>
 
 <style scoped>

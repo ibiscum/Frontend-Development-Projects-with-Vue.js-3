@@ -4,15 +4,20 @@ const store = useCartStore()
 </script>
 
 <template>
-<h2>Checkout</h2>
-Your total is ${{ store.cartTotal }}.
-<button v-show="store.cartTotal > 0" @click="checkout">Checkout</button>
+  <h2>Checkout</h2>
+  Your total is ${{ store.cartTotal }}.
+  <button
+    v-show="store.cartTotal > 0"
+    @click="checkout"
+  >
+    Checkout
+  </button>
 </template>
 
 <script>
 
 export default {
-  name: 'Cart',
+  name: 'CartInput',
   methods: {
 	checkout() {
 		alert('Checkout process!');

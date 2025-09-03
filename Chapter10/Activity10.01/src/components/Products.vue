@@ -1,4 +1,5 @@
 <script setup>
+defineOptions({ name: 'ProductList' })
 import { useCartStore } from '@/stores/cart';
 const store = useCartStore()
 </script>
