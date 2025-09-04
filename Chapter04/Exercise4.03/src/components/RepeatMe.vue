@@ -1,6 +1,9 @@
 <template>
   <div>
-    <span v-for="r in repetitions" :key="r">
+    <span
+      v-for="r in repetitions"
+      :key="r"
+    >
       {{ config.content }}
     </span>
   </div>
@@ -9,11 +12,12 @@
 export default {
   props: {
     config: {
-      type: Object,
+      type: Function,
       validator(value) {
         return typeof value.times === 'number' &&
           typeof value.content === 'string'
-      }
+      },
+      default: () => 1,
     }
   },
   computed: {

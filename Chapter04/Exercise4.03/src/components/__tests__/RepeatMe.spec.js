@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Repeat from '../Repeat.vue'
+import Repeat from '../RepeatMe.vue'
 
 describe('Repeat', () => {
   it('renders properly', () => {

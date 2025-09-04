@@ -4,7 +4,7 @@
   </main>
 </template>
 <script>
-import Repeat from './components/Repeat.vue'
+import Repeat from './components/RepeatMe.vue'
 
 export default {
   components: {
