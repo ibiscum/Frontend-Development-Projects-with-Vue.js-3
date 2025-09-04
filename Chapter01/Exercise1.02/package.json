@@ -1,6 +1,8 @@
 {
   "name": "exercise1-02",
   "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,8 +21,8 @@
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.34.0",
     "eslint-plugin-vue": "^10.4.0",
-        "jsdom": "^19.0.0",
-    "prettier": "^2.5.1",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
     "vite": "^7.1.4",
     "vitest": "^3.2.4"
   }
