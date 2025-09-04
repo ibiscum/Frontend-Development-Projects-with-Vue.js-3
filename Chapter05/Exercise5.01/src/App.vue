@@ -1,6 +1,7 @@
 <script setup>
-import Greeting from './components/Greeting.vue'
+import Greeting from './components/GreetingComp.vue'
 </script>
+
 <template>
   <div id="app">
     <Greeting />
