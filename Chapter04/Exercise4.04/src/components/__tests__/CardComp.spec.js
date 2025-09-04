@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Card from '../Card.vue'
+import Card from '../CardComp.vue'
 
 describe('Card', () => {
   it('renders properly', () => {

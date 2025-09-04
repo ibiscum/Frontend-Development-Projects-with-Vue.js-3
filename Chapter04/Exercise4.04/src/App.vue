@@ -2,7 +2,7 @@
   <div id="app">
     <Card>
       <template #image>
-        <img src="https://picsum.photos/id/1015/300" />
+        <img src="https://picsum.photos/id/1015/300">
       </template>
       <template #title>
         <h2>My Holiday picture</h2>
@@ -14,8 +14,9 @@
     </Card>
   </div>
 </template>
+
 <script>
-import Card from './components/Card.vue'
+import Card from './components/CardComp.vue'
 export default {
   components: {
     Card
