@@ -1,25 +1,33 @@
 <template>
-    <label>
-        What are you searching for?
-        <input type="text" v-model="searchTerm" placeholder="Search by blog's title" />
-    </label>
-    <ul>
-        <li v-for="(blog, index) in getFilteredBlogs()" :key="index">
-            <article>
-                <h3>{{ blog.title }}</h3>
-                <h4>{{ blog.author }}</h4>
-                <p>{{ blog.description }}</p>
-                <button @click="toggleFavorite(index)">
-                    {{ 
-                        blog.isFavorite 
-                        ? 'Remove from favorites' 
-                        : 'Add to favorites' 
-                    }}
-                </button>
-            </article>
-        </li>
-    </ul>
+  <label>
+    What are you searching for?
+    <input
+      v-model="searchTerm"
+      type="text"
+      placeholder="Search by blog's title"
+    >
+  </label>
+  <ul>
+    <li
+      v-for="(blog, index) in getFilteredBlogs()"
+      :key="index"
+    >
+      <article>
+        <h3>{{ blog.title }}</h3>
+        <h4>{{ blog.author }}</h4>
+        <p>{{ blog.description }}</p>
+        <button @click="toggleFavorite(index)">
+          {{ 
+            blog.isFavorite 
+              ? 'Remove from favorites' 
+              : 'Add to favorites' 
+          }}
+        </button>
+      </article>
+    </li>
+  </ul>
 </template>
+
 <script setup>
 import { ref, reactive } from 'vue';
 
