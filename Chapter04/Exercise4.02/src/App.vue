@@ -15,7 +15,13 @@ export default {
 
 <template>
   <div id="app">
-    <input placeholder="What is your name" v-model="who" />
-    <Greeting greeting="Hi" :who="who" />
+    <input
+      v-model="who"
+      placeholder="What is your name"
+    >
+    <Greeting
+      greeting="Hi"
+      :who="who"
+    />
   </div>
 </template>
