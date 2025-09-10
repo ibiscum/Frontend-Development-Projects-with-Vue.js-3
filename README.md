@@ -1,5 +1,7 @@
 # Frontend Development Projects with Vue.js 3
 
+[![CodeQL Advanced](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/codeql.yml)
+
 <a href="https://www.packtpub.com/product/frontend-development-projects-with-vuejs-3-second-edition/9781803234991"><img src="https://static.packt-cdn.com/products/9781803234991/cover/smaller" alt="" height="256px" align="right"></a>
 
 This is the code repository for [Frontend Development Projects with Vue.js 3](https://www.packtpub.com/product/frontend-development-projects-with-vuejs-3-second-edition/9781803234991), published by Packt.
