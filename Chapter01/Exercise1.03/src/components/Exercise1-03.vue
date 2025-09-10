@@ -1,7 +1,15 @@
 <template>
   <div>
-    <h1 v-show="true" v-once v-text="text" />
-    <h2 v-show="false" v-html="html" />
+    <h1
+      v-show="true"
+      v-once
+      v-text="text"
+    />
+
+    <!-- v-html="html" -->
+    <h2
+      v-show="false"
+    />
     <a
       :href="link.url"
       :target="link.target"
@@ -27,7 +35,7 @@ export default {
       // v-text
       text: "Directive text",
       // v-html
-      html: "Stylise</br>HTML in<br/><b>your data</b>",
+      // html: "Stylise</br>HTML in<br/><b>your data</b>",
       // v-bind
       link: {
         url: "https://google.com",
