@@ -3,6 +3,5 @@
 </template>
 <script>
 export default {
-  props: ["greeting", "who"],
-};
+  props: {greeting: {type: String, default: 'greeting'}, who: {type: String, default: 'who'}}}
 </script>

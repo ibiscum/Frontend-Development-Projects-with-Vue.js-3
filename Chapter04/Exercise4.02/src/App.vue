@@ -1,5 +1,5 @@
 <script>
-import Greeting from "./components/Greeting.vue";
+import Greeting from "./components/GreetingComp.vue";
 export default {
   components: {
     Greeting,
