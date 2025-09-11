@@ -21,7 +21,7 @@ function update(e) {
 
 <template>
   <div id="app">
-    <AppHeader/>
+    <AppHeader />
     <div class="flex flex-col md:flex-row">
       <AppProfileForm @submit="update($event)" />
       <AppProfileDisplay :form-data="formData" />
