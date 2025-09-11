@@ -3,15 +3,17 @@
     <h1>Activity 3.01</h1>
     <div>
       <input 
-        type="text" 
-        placeholder="First name" 
-        id="fname"
-        v-model= "fname" />
+        id="fname" 
+        v-model="fname" 
+        type="text"
+        placeholder="First name"
+      >
       <input 
+        id="lname" 
+        v-model="lname"
         type="text" 
-        id="lname"
-        placeholder="Last name" 
-        v-model= "lname" />
+        placeholder="Last name"
+      >
     </div>
     <div>
       <p>Full name: {{ fullName }}</p>
@@ -20,7 +22,7 @@
 </template>
 <script>
 export default {
-  name: 'Activity3-01',
+  name: 'ActivityComp301',
   data() {
     return {
       fname: '',

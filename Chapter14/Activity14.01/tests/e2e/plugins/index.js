@@ -1,5 +1,5 @@
 const { initPlugin } = require('cypress-plugin-snapshots/plugin');
-/* eslint-disable arrow-body-style */
+ 
 // https://docs.cypress.io/guides/guides/plugins-guide.html
 
 // if you need a custom webpack configuration you can uncomment the following import
