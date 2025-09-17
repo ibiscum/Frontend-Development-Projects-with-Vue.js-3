@@ -6,7 +6,7 @@
           :id="todo.id"
           :title="todo.title"
           :completed="todo.completed"
-          @completeChange="handleCompleteChange(todo.id, $event)"
+          @complete-change="handleCompleteChange(todo.id, $event)"
         />
       </template>
     </TodoList>
@@ -21,12 +21,12 @@ export default {
     TodoEntry,
   },
   inject: ['axios'],
+  data() {
+    return { todos: [] };
+  },
   async mounted() {
     const { data: todos } = await this.axios.get(`${this.$baseUrl}/todos`);
     this.todos = todos;
-  },
-  data() {
-    return { todos: [] };
   },
   methods: {
     handleCompleteChange(id, newCompleted) {
