@@ -7,8 +7,15 @@
     "Chapter01/Exercise1.01",
     "Chapter01/Exercise1.02",
     "Chapter01/Exercise1.03",
-    "Chapter01/Exercise1.04"
-
+    "Chapter01/Exercise1.04",
+    "Chapter01/Exercise1.05",
+    "Chapter01/Exercise1.06",
+    "Chapter01/Exercise1.07",
+    "Chapter01/Exercise1.08",
+    "Chapter01/Exercise1.09",
+    "Chapter01/Exercise1.10",
+    "Chapter01/Exercise1.11",
+    "Chapter01/Exercise1.12"
   ],
   "dependencies": {
     "vue": "^3.5.22"
