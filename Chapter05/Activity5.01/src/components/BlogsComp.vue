@@ -62,8 +62,9 @@
     </section>
   </div>
 </template>
+
 <script setup>
-import { defineProps, defineEmits, ref, watch } from "vue";
+import { ref, watch } from "vue";
 import { useSearch } from "../composables/useSearch";
 
 const props = defineProps({

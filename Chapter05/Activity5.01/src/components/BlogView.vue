@@ -10,7 +10,7 @@
       v-else
       @add-new-item="addItem"
     />
-    <Blogs
+    <BlogsComp
       :blogs="blogs"
       :is-loading="isLoading"
       :error="error"
@@ -20,7 +20,7 @@
 </template>
 <script setup>
 import BlogEditor from './BlogEditor.vue';
-import Blogs from './Blogs.vue';
+import BlogsComp from './BlogsComp.vue';
 import { useBlogs } from '../composables/useBlogs';
 import { ref } from 'vue';
 

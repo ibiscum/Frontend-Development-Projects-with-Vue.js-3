@@ -39,9 +39,9 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import { ref } from 'vue';
-
 const title = ref('');
 const author = ref('');
 const content = ref('');
