@@ -1,4 +1,5 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <header class="w-full block p-4 border-b bg-blue-300 border-gray-700">
