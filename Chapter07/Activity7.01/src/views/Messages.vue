@@ -7,6 +7,7 @@
     </router-view>
   </div>
 </template>
+
 <script setup>
 import DefaultLayout from "../layouts/default.vue";
 import { useRoute } from "vue-router";

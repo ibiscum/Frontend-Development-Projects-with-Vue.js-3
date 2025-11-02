@@ -6,6 +6,7 @@
     </p>
   </div>
 </template>
+
 <script setup>
 const messages = [
   "Hello, how are you?",

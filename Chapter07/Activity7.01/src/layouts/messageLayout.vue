@@ -7,6 +7,7 @@
     <button @click="goBack">Back</button>
   </div>
 </template>
+
 <script>
 export default {
   methods: {
