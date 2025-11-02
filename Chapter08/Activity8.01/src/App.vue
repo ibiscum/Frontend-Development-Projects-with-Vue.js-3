@@ -28,7 +28,9 @@ const messages = route.meta.messages;
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 2s, transform 3s;
+  transition:
+    opacity 2s,
+    transform 3s;
 }
 .fade-enter,
 .fade-leave-to {

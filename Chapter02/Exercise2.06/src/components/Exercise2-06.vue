@@ -65,7 +65,7 @@ export default {
     input3: {
       handler() {
         this.watchFilterList = this.frameworkList.filter((item) =>
-          item.toLowerCase().includes(this.input3.toLowerCase())
+          item.toLowerCase().includes(this.input3.toLowerCase()),
         );
       },
       immediate: true,
@@ -81,7 +81,7 @@ export default {
   methods: {
     searchMethod() {
       this.methodFilterList = this.frameworkList.filter((item) =>
-        item.toLowerCase().includes(this.input.toLowerCase())
+        item.toLowerCase().includes(this.input.toLowerCase()),
       );
     },
   },

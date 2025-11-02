@@ -1,13 +1,13 @@
 <template>
-  <div class=”about”>
-    <h2>Age: {{age}}</h2>
+  <div class="”about”">
+    <h2>Age: {{ age }}</h2>
   </div>
 </template>
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 const props = defineProps({
-    age: Number
-})
+  age: Number,
+});
 </script>
 
 <style>

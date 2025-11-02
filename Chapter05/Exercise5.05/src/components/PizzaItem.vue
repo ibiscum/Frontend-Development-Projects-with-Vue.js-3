@@ -6,8 +6,12 @@
       <strike>Was ${{ pizza.price }}</strike>
       <strong> Now at ${{ newPrice }} ONLY</strong>
     </div>
-    <button @click="updateDiscount" class="decrease-btn">Get a discount!</button>
-    <button @click="increasePrice" class="increase-btn">Increase the price!</button>
+    <button @click="updateDiscount" class="decrease-btn">
+      Get a discount!
+    </button>
+    <button @click="increasePrice" class="increase-btn">
+      Increase the price!
+    </button>
   </div>
 </template>
 
@@ -26,8 +30,7 @@ watch(
   (newValue) => {
     newPrice.value = pizza.price - (pizza.price * newValue) / 100;
   },
-  { immediate: true
-  }
+  { immediate: true },
 );
 
 const updateDiscount = () => {
@@ -42,7 +45,7 @@ watch(
   () => pizza.price,
   (newValue) => {
     newPrice.value = newValue - (newValue * discount.value) / 100;
-  }
+  },
 );
 </script>
 

@@ -1,8 +1,5 @@
 <template>
-<h2>Commentator Pro</h2>
+  <h2>Commentator Pro</h2>
 
-<button>
-Add a New Comment
-</button>
+  <button>Add a New Comment</button>
 </template>
-

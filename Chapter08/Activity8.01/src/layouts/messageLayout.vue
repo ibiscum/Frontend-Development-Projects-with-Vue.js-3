@@ -2,7 +2,7 @@
   <div class="message">
     <h2>Message content:</h2>
     <main>
-      <slot/>
+      <slot />
     </main>
     <button @click="goBack">Back</button>
   </div>
@@ -12,15 +12,13 @@ export default {
   methods: {
     goBack() {
       if (this.$route.params.from) {
-        this.$router.go(-1)
-      }
-      else {
+        this.$router.go(-1);
+      } else {
         this.$router.push({
-          name: 'messages'
-        })
+          name: "messages",
+        });
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
-    

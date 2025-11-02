@@ -33,10 +33,12 @@ export default {
 };
 </script>
 <style scoped>
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: all 5s;
 }
-.fade-enter-from, .fade-leave-active {
+.fade-enter-from,
+.fade-leave-active {
   opacity: 0;
   transform: translateX(30px);
 }

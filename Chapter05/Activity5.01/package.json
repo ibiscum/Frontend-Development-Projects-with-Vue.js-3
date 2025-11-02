@@ -1,7 +1,7 @@
 {
   "name": "activity5.01",
   "type": "module",
-  "private":true,
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -13,8 +13,6 @@
     "deps:check": "npx npm-check-updates",
     "deps:upgrade": "npx npm-check-updates -u && npm install"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

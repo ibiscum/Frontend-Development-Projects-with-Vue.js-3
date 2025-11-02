@@ -16,8 +16,8 @@ export default {
 </script> -->
 
 <script setup>
-  const title ='My first component!';
-  const isUppercase = true;
+const title = "My first component!";
+const isUppercase = true;
 </script>
 
 <style>

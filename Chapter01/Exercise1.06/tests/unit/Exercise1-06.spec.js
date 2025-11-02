@@ -7,7 +7,7 @@ describe("Exercise1-06.vue", () => {
     const wrapper = shallowMount(Exercise);
 
     expect(wrapper.find("h1").text()).toEqual(
-      "Looping through array of objects"
+      "Looping through array of objects",
     );
   });
 });

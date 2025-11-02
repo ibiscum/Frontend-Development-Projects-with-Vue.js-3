@@ -6,7 +6,9 @@
       >
         Commentator Pro
       </h2>
-      <button class="flex mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <button
+        class="flex mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
         Add a New Comment
       </button>
     </div>
@@ -14,5 +16,5 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>

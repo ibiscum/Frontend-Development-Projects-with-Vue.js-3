@@ -20,7 +20,7 @@ export default {
     TodoList,
     TodoEntry,
   },
-  inject: ['axios'],
+  inject: ["axios"],
   data() {
     return { todos: [] };
   },
@@ -31,7 +31,7 @@ export default {
   methods: {
     handleCompleteChange(id, newCompleted) {
       this.todos = this.todos.map((t) =>
-        t.id === id ? { ...t, completed: newCompleted } : t
+        t.id === id ? { ...t, completed: newCompleted } : t,
       );
     },
   },

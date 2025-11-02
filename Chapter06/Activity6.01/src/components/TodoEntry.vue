@@ -1,16 +1,12 @@
 <template>
   <div>
     <label>{{ title }}</label>
-    <input
-      type="checkbox"
-      :checked="completed"
-      @change="toggleCompletion()"
-    >
+    <input type="checkbox" :checked="completed" @change="toggleCompletion()" />
   </div>
 </template>
 <script>
 export default {
-  inject: ['axios'],
+  inject: ["axios"],
   props: {
     id: {
       type: Number,
@@ -25,7 +21,7 @@ export default {
       default: false,
     },
   },
-emits: {'completeChange': null},
+  emits: { completeChange: null },
   methods: {
     toggleCompletion() {
       const newCompleted = !this.completed;

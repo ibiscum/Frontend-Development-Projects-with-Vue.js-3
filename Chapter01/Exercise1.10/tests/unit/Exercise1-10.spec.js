@@ -11,7 +11,7 @@ describe("Exercise1-10.vue", () => {
   it("anonymous loop outputs correctly", () => {
     expect(wrapper.findAll("li").length).toEqual(8);
   });
-  
+
   it("deleted item is removed from array", () => {
     wrapper.setData({
       list: [1, 2, 3],

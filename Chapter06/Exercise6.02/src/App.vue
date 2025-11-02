@@ -12,7 +12,7 @@
 export default {
   async mounted() {
     const { data: todos } = await this.$axios(
-      "https://jsonplaceholder.typicode.com/todos"
+      "https://jsonplaceholder.typicode.com/todos",
     );
     this.todos = todos;
   },

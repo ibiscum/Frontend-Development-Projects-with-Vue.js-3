@@ -1,5 +1,5 @@
 <script setup>
-import Example from './components/Example8-02.vue'
+import Example from "./components/Example8-02.vue";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import Example from './components/Example8-02.vue'
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

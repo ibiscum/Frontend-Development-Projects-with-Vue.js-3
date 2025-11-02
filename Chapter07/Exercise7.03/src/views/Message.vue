@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <p>{{content}}</p>
-    </div>
+  <div>
+    <p>{{ content }}</p>
+  </div>
 </template>
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 const { content } = defineProps({
-    content: {
-        default: '',
-        type: String
-    }
-})
+  content: {
+    default: "",
+    type: String,
+  },
+});
 </script>

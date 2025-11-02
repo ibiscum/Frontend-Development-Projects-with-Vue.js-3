@@ -4,5 +4,5 @@
   </div>
 </template>
 <script setup>
-import TextEditorWithCount from './components/TextEditorWithCount.vue'
+import TextEditorWithCount from "./components/TextEditorWithCount.vue";
 </script>

@@ -1,17 +1,14 @@
 <template>
   <section class="md:w-2/3 flex flex-col p-12 items-center">
-
-  	<!-- Inputs -->
+    <!-- Inputs -->
     <div class="flex flex-col">
-      <label class="flex text-gray-800 mb-2" for="name">Name
-      </label>
+      <label class="flex text-gray-800 mb-2" for="name">Name </label>
       <input
         id="name"
         type="text"
         name="name"
-        class="border-2 border-solid border-blue-200 rounded 
-          px-2 py-1"
-		v-model="name"
+        class="border-2 border-solid border-blue-200 rounded px-2 py-1"
+        v-model="name"
       />
     </div>
 
@@ -22,8 +19,7 @@
         type="text"
         name="occupation"
         v-model="occupation"
-        class="border-2 border-solid border-blue-200 rounded 
-          px-2 py-1"
+        class="border-2 border-solid border-blue-200 rounded px-2 py-1"
       />
     </div>
 
@@ -43,28 +39,26 @@
         Submit
       </button>
     </div>
-
   </section>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const emit = defineEmits(['submit'])
+import { ref } from "vue";
+const emit = defineEmits(["submit"]);
 
-const name = ref('');
-const occupation = ref('');
+const name = ref("");
+const occupation = ref("");
 
 function submitForm() {
-  emit('submit', { 
-    name: this.name, 
-    occupation: this.occupation
+  emit("submit", {
+    name: this.name,
+    occupation: this.occupation,
   });
 }
 
 function clear() {
-  this.name = '';
-  this.occupation = '';
-  emit('submit', {});
+  this.name = "";
+  this.occupation = "";
+  emit("submit", {});
 }
 </script>
-

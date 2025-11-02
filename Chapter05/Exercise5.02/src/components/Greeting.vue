@@ -13,7 +13,7 @@ export default {
         : h(
             "div",
             { style: { color: "red" } },
-            "There is not enough information to display"
+            "There is not enough information to display",
           );
   },
 };

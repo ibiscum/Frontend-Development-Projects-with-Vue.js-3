@@ -1,6 +1,6 @@
-import axios from 'axios'
+import axios from "axios";
 export default {
   install(app) {
-    app.provide('axios', axios)
-  }
-}
+    app.provide("axios", axios);
+  },
+};

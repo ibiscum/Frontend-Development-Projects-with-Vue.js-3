@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import PizzaItem from "@/components/PizzaItem.vue";
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect } from "vitest";
 
 describe("PizzaItem.vue", () => {
   const wrapper = shallowMount(PizzaItem, {});

@@ -6,7 +6,7 @@ export const routes = [
   {
     path: "/",
     name: "messages",
-    component: () => import("../views/Messages.vue"), 
+    component: () => import("../views/Messages.vue"),
     beforeEnter(to, from, next) {
       to.meta.messages = messages;
       next();

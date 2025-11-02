@@ -1,15 +1,9 @@
 <template>
   <div>
-    <h1
-      v-show="true"
-      v-once
-      v-text="text"
-    />
+    <h1 v-show="true" v-once v-text="text" />
 
     <!-- v-html="html" -->
-    <h2
-      v-show="false"
-    />
+    <h2 v-show="false" />
     <a
       :href="link.url"
       :target="link.target"

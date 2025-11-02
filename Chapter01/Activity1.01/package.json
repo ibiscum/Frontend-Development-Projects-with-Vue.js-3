@@ -2,7 +2,7 @@
   "name": "activity1-01",
   "version": "0.0.0",
   "private": true,
-  "type": "module",  
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,8 +11,6 @@
     "preview": "vite preview --port 5050",
     "lint": "eslint --fix"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

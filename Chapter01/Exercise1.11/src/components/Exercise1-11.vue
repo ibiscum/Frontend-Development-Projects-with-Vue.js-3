@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/typography.scss';
+@import "../styles/typography.scss";
 
 h1 {
   font-size: 50px;

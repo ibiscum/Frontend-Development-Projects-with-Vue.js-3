@@ -1,19 +1,18 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
 export const userPreferencesStore = defineStore({
-  id: 'userPreferences',
+  id: "userPreferences",
   state: () => ({
     dismissedSubscriberBanner: false,
-    acceptedCookie: false
+    acceptedCookie: false,
   }),
-  getters: {
-  },
+  getters: {},
   actions: {
     dismissSubscriberBanner() {
       this.dismissedSubscriberBanner = true;
     },
     acceptCookie() {
       this.acceptedCookie = true;
-    }
-  }
-})
+    },
+  },
+});

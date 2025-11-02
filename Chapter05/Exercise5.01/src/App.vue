@@ -1,5 +1,5 @@
 <script setup>
-import Greeting from './components/GreetingComp.vue'
+import Greeting from "./components/GreetingComp.vue";
 </script>
 
 <template>

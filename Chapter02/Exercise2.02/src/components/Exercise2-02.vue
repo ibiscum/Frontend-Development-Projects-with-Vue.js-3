@@ -12,22 +12,22 @@ export default {
     return {
       count: -1,
       divideByTwo: 0,
-    }
+    };
   },
   computed: {
     incrementOne: {
       // getter
       get() {
-        return this.count + 1
+        return this.count + 1;
       },
       // setter
       set(val) {
-        this.count = val - 1
-        this.divideByTwo = val / 2
+        this.count = val - 1;
+        this.divideByTwo = val / 2;
       },
     },
   },
-}
+};
 </script>
 
 <style>

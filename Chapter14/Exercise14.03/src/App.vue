@@ -25,12 +25,12 @@
           class="flex mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           :disabled="!newComment || isSubmitting"
           :class="{
-            'opacity-50 cursor-not-allowed' : !newComment,
-            spinner: isSubmitting
+            'opacity-50 cursor-not-allowed': !newComment,
+            spinner: isSubmitting,
           }"
           @click="submitNewComment()"
         >
-        Submit
+          Submit
         </button>
       </div>
     </div>
@@ -42,17 +42,17 @@ export default {
   data() {
     return {
       showEditor: false,
-      newComment: '',
-      isSubmitting: false
-    }
+      newComment: "",
+      isSubmitting: false,
+    };
   },
   methods: {
     submitNewComment() {
-      this.isSubmitting = true
+      this.isSubmitting = true;
       setTimeout(() => {
-        this.isSubmitting = false
-      }, 2500)
-    }
-  }
-}
+        this.isSubmitting = false;
+      }, 2500);
+    },
+  },
+};
 </script>

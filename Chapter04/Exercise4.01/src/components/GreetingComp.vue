@@ -5,8 +5,8 @@
 <script>
 export default {
   props: {
-    greeting: {type: String, default: 'greeting'},
-    who: {type: String, default: 'who'}
-  }
+    greeting: { type: String, default: "greeting" },
+    who: { type: String, default: "who" },
+  },
 };
 </script>

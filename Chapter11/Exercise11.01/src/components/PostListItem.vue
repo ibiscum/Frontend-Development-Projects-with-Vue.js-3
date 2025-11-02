@@ -1,34 +1,27 @@
 <script setup>
 defineProps({
   title: {
-    type: String
+    type: String,
   },
   description: {
-	type: String
+    type: String,
   },
   tags: {
-	type: Array, 
-	default: () => []
-  }
-})
-
+    type: Array,
+    default: () => [],
+  },
+});
 </script>
 
 <template>
-	<div>
-	<h3>{{ title }}</h3>
-	<p>
-		{{ description }}
-	</p>
+  <div>
+    <h3>{{ title }}</h3>
+    <p>
+      {{ description }}
+    </p>
 
-	<ul>
-      <li
-        v-for="tag in tags"
-        :key="tag"
-      >
-        #{{ tag }}
-      </li>
+    <ul>
+      <li v-for="tag in tags" :key="tag">#{{ tag }}</li>
     </ul>
-
-	</div>
+  </div>
 </template>

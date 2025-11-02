@@ -18,18 +18,18 @@ export default {
     return {
       totalItems: 0,
       totalCost: 0,
-    }
+    };
   },
   methods: {
     addToCart(n) {
-      this.totalItems = this.totalItems + 1
-      this.totalCost = this.totalCost + n
+      this.totalItems = this.totalItems + 1;
+      this.totalCost = this.totalCost + n;
     },
     formatCurrency(val) {
-      return `$${val.toFixed(2)}`
+      return `$${val.toFixed(2)}`;
     },
   },
-}
+};
 </script>
 
 <style scoped>

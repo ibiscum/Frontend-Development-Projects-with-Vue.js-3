@@ -1,21 +1,11 @@
 <template>
-  <div
-    id="app"
-    class="container"
-  >
+  <div id="app" class="container">
     <h1>Vue devtools debugging</h1>
 
-    <input
-      v-model="input"
-      type="text"
-      placeholder="Filter list"
-    >
+    <input v-model="input" type="text" placeholder="Filter list" />
 
     <ul>
-      <li
-        v-for="(item, i) in computedList"
-        :key="i"
-      >
+      <li v-for="(item, i) in computedList" :key="i">
         {{ item }}
       </li>
     </ul>
@@ -23,30 +13,29 @@
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   data() {
     return {
       frameworks: [
-        'Vue',
-        'React',
-        'Backbone',
-        'Ember',
-        'Knockout',
-        'jQuery',
-        'Angular',
+        "Vue",
+        "React",
+        "Backbone",
+        "Ember",
+        "Knockout",
+        "jQuery",
+        "Angular",
       ],
-      input: '',
-    }
+      input: "",
+    };
   },
   computed: {
     computedList() {
-      return this.frameworks.filter(item => {
-        return item.toLowerCase().includes(this.input.
-          toLowerCase())
-      })
+      return this.frameworks.filter((item) => {
+        return item.toLowerCase().includes(this.input.toLowerCase());
+      });
     },
   },
-}
+};
 </script>
 <style>
 .container {

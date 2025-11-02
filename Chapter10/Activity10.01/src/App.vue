@@ -1,7 +1,7 @@
 <script setup>
-import Products from './components/Products.vue'
-import Cart from './components/CartInput.vue'
-import Checkout from './components/Checkout.vue'
+import Products from "./components/Products.vue";
+import Cart from "./components/CartInput.vue";
+import Checkout from "./components/Checkout.vue";
 </script>
 
 <template>
@@ -10,5 +10,4 @@ import Checkout from './components/Checkout.vue'
   <Checkout />
 </template>
 
-<style>
-</style>
+<style></style>

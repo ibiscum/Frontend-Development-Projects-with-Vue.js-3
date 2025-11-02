@@ -1,4 +1,4 @@
-import { ref, onBeforeMount } from 'vue';
+import { ref, onBeforeMount } from "vue";
 
 export const useMovies = () => {
   const movies = ref([]);

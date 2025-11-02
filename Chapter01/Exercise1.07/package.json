@@ -11,8 +11,6 @@
     "preview": "vite preview --port 5050",
     "lint": "eslint --fix"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

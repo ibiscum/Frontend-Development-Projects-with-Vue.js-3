@@ -10,41 +10,29 @@
     <section v-else>
       <div class="search">
         <label for="search">Search:</label>
-        <input
-          id="search"
-          v-model="searchTerm"
-          type="text"
-        >
+        <input id="search" v-model="searchTerm" type="text" />
       </div>
       <fieldset>
-        <div>Filter by: </div>
-        <input
-          id="title"
-          v-model="filters"
-          type="checkbox"
-          value="title"
-        >
+        <div>Filter by:</div>
+        <input id="title" v-model="filters" type="checkbox" value="title" />
         <label for="title">By Title</label>
         <input
           id="content"
           v-model="filters"
           type="checkbox"
           value="description"
-        >
+        />
         <label for="content">By Content</label>
       </fieldset>
       <ul class="articles-list">
         <li>
-          <article
-            v-for="(blog, i) in filteredBlogs"
-            :key="i"
-          >
+          <article v-for="(blog, i) in filteredBlogs" :key="i">
             <div class="article-item-info">
               <img
                 v-if="blog.heroImage"
                 class="thumbnail"
                 :src="`${blog.heroImage.fields.file.url}?fit=scale&w=350&h=196`"
-              >
+              />
               <div class="article-text">
                 <div class="date">
                   {{ new Date(blog.publishDate).toDateString() }}
@@ -52,10 +40,8 @@
                 <h4>{{ blog.title }}</h4>
                 <p>{{ blog.description }}</p>
               </div>
-            </div>            
-            <button @click="emits('deleteBlog', blog.id)">
-              Delete
-            </button>
+            </div>
+            <button @click="emits('deleteBlog', blog.id)">Delete</button>
           </article>
         </li>
       </ul>
@@ -89,18 +75,14 @@ watch(
   () => props.blogs,
   (newBlogs) => {
     blogs.value = newBlogs;
-  }
+  },
 );
 
-const {
-  searchTerm,
-  filters,
-  filteredItems: filteredBlogs,
-} = useSearch(blogs);
+const { searchTerm, filters, filteredItems: filteredBlogs } = useSearch(blogs);
 </script>
 
 <style scoped>
-.articles-list article{
+.articles-list article {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -110,7 +92,7 @@ const {
   margin-block: 20px;
 }
 button {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .article-item-info {
@@ -133,12 +115,12 @@ button {
   text-transform: uppercase;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 
 fieldset {
-    display: flex;
-    gap: 10px;
-    margin-block: 20px;
+  display: flex;
+  gap: 10px;
+  margin-block: 20px;
 }
 </style>

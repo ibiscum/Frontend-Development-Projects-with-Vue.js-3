@@ -1,16 +1,13 @@
 <template>
   <section class="md:w-2/3 flex flex-col p-12 items-center">
-
-  	<!-- Inputs -->
+    <!-- Inputs -->
     <div class="flex flex-col">
-      <label class="flex text-gray-800 mb-2" for="name">Name
-      </label>
+      <label class="flex text-gray-800 mb-2" for="name">Name </label>
       <input
         id="name"
         type="text"
         name="name"
-        class="border-2 border-solid border-blue-200 rounded 
-          px-2 py-1"
+        class="border-2 border-solid border-blue-200 rounded px-2 py-1"
         v-model="store.name"
       />
     </div>
@@ -22,8 +19,7 @@
         type="text"
         name="occupation"
         v-model="store.occupation"
-        class="border-2 border-solid border-blue-200 rounded 
-          px-2 py-1"
+        class="border-2 border-solid border-blue-200 rounded px-2 py-1"
       />
     </div>
 
@@ -36,12 +32,11 @@
         Submit
       </button>
     </div>
-    
   </section>
 </template>
 
 <script setup>
-import { store } from '@/store.js';
+import { store } from "@/store.js";
 
 function submitForm() {
   // Do nothing

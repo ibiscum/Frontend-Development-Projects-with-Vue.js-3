@@ -1,13 +1,16 @@
 <script setup>
-import AppHeader from '@/components/AppHeader.vue'
-import AppProfileDisplay from '@/components/AppProfileDisplay.vue'
-import AppProfileForm from '@/components/AppProfileForm.vue'
+import AppHeader from "@/components/AppHeader.vue";
+import AppProfileDisplay from "@/components/AppProfileDisplay.vue";
+import AppProfileForm from "@/components/AppProfileForm.vue";
 
-import { reactive } from 'vue'
+import { reactive } from "vue";
 
 const formData = reactive({
-  name:'', occupation:'', 
-  organization:'', email:'', phonenumber:''
+  name: "",
+  occupation: "",
+  organization: "",
+  email: "",
+  phonenumber: "",
 });
 
 function update(e) {
@@ -33,13 +36,13 @@ function update(e) {
 export default {
   data() {
     return {
-      formData: {}
-    }
+      formData: {},
+    };
   },
   methods: {
     update(formData) {
       this.formData = formData;
-    }
-  }
-}
+    },
+  },
+};
 </script>

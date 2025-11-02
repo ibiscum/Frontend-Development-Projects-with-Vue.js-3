@@ -1,10 +1,10 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
 export const useColorStore = defineStore({
-  id: 'color',
+  id: "color",
   state: () => ({
-    red: 0, 
-    blue: 0, 
-    green: 0
-  })
-})
+    red: 0,
+    blue: 0,
+    green: 0,
+  }),
+});

@@ -1,5 +1,5 @@
 <script setup>
-import Exercise from './components/Exercise8-01.vue'
+import Exercise from "./components/Exercise8-01.vue";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import Exercise from './components/Exercise8-01.vue'
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

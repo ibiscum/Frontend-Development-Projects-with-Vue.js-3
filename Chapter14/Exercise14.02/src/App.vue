@@ -24,9 +24,9 @@
           data-test-id="new-comment-submit"
           class="flex mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           :disabled="!newComment"
-          :class="{ 'opacity-50 cursor-not-allowed' : !newComment }"
+          :class="{ 'opacity-50 cursor-not-allowed': !newComment }"
         >
-        Submit
+          Submit
         </button>
       </div>
     </div>
@@ -38,8 +38,8 @@ export default {
   data() {
     return {
       showEditor: false,
-      newComment: ''
-    }
-  }
-}
+      newComment: "",
+    };
+  },
+};
 </script>

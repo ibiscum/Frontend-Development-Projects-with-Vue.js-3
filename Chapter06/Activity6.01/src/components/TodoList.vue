@@ -1,13 +1,7 @@
 <template>
   <ul>
-    <li
-      v-for="todo in props.todos"
-      :key="todo.id"
-    >
-      <slot
-        name="todo"
-        :todo="todo"
-      />
+    <li v-for="todo in props.todos" :key="todo.id">
+      <slot name="todo" :todo="todo" />
     </li>
   </ul>
 </template>
@@ -15,7 +9,7 @@
 const props = defineProps({
   todos: {
     type: Array,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 </script>

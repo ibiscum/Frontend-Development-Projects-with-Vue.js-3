@@ -9,7 +9,7 @@ describe("Exercise1-08.vue", () => {
     expect(wrapper.findAll("li").length).toEqual(5);
   });
   it("trigger alert", () => {
-    const triggerSpy = vi.spyOn(wrapper.vm, 'triggerAlert')
+    const triggerSpy = vi.spyOn(wrapper.vm, "triggerAlert");
     wrapper.findAll("button")[0].trigger("click");
     expect(triggerSpy).toBeCalled();
   });

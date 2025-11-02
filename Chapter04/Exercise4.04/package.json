@@ -11,8 +11,6 @@
     "lint": "eslint --fix",
     "lint:scss:fix": "stylelint '**/*.scss' --syntax scss --fix -f verbose —color"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

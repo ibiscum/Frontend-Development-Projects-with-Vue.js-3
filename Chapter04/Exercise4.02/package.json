@@ -10,8 +10,6 @@
     "test:unit": "vitest --environment jsdom --root src/",
     "lint": "eslint --fix"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

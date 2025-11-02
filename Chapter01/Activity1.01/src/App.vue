@@ -44,7 +44,7 @@ export default {
       if (i < 0 || i > this.shoppingList.length) return;
 
       this.shoppingList = this.shoppingList.filter(
-        (item, index) => index !== i
+        (item, index) => index !== i,
       );
     },
     deleteAll() {

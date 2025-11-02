@@ -10,16 +10,16 @@
 export default {
   data() {
     return {
-      firstName: '',
-      lastName: '',
-    }
+      firstName: "",
+      lastName: "",
+    };
   },
   computed: {
     fullName() {
-      return `${this.firstName} ${this.lastName}`
+      return `${this.firstName} ${this.lastName}`;
     },
   },
-}
+};
 </script>
 
 <style>

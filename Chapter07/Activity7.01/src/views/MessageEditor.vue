@@ -17,7 +17,7 @@ const props = defineProps({
 
 const emits = defineEmits(["list:update"]);
 
-const message = ref('')
+const message = ref("");
 
 const onSendClick = () => {
   if (!message.value) return;
@@ -28,7 +28,7 @@ const onSendClick = () => {
 onBeforeRouteLeave((to, from, next) => {
   if (message.value !== "") {
     const ans = window.confirm(
-      "You have an unsaved message.  Are you sure you want to navigate away?"
+      "You have an unsaved message.  Are you sure you want to navigate away?",
     );
 
     next(!!ans);

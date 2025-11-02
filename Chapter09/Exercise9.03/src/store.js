@@ -1,10 +1,10 @@
-import { reactive } from 'vue';
+import { reactive } from "vue";
 
 export const store = reactive({
-	name:'',
-	occupation:'',
-	clear() {
-		this.name = '';
-		this.occupation = '';
-	}
+  name: "",
+  occupation: "",
+  clear() {
+    this.name = "";
+    this.occupation = "";
+  },
 });

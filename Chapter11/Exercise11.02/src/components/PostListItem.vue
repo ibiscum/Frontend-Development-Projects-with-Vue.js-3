@@ -1,43 +1,39 @@
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 const props = defineProps({
   title: {
-    type: String
+    type: String,
   },
   description: {
-  	type: String
+    type: String,
   },
   tags: {
-    type: Array, 
-    default: () => []
-  }
-})
+    type: Array,
+    default: () => [],
+  },
+});
 
 const truncated = computed(() => {
-  return props.description && props.description.slice(0,8)
-})
+  return props.description && props.description.slice(0, 8);
+});
 
 const ellipsis = computed(() => {
-  return props.description && props.description.length > 50 ? 
-          `${props.description.slice(0,50)}...` : props.description;
-})
+  return props.description && props.description.length > 50
+    ? `${props.description.slice(0, 50)}...`
+    : props.description;
+});
 
-defineExpose({ truncated, ellipsis })
-
+defineExpose({ truncated, ellipsis });
 </script>
 
 <template>
-	<div>
-	<h3>{{ title }}</h3>
-	<p>{{ ellipsis }}</p>
+  <div>
+    <h3>{{ title }}</h3>
+    <p>{{ ellipsis }}</p>
 
-	<ul>
-    <li v-for="tag in tags" :key="tag">
-      #{{ tag }}
-    </li>
-  </ul>
-
-	</div>
+    <ul>
+      <li v-for="tag in tags" :key="tag">#{{ tag }}</li>
+    </ul>
+  </div>
 </template>
-

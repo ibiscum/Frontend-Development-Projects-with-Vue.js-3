@@ -1,17 +1,16 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import Default from './layouts/default.vue'
-import { shallowRef } from 'vue'
+import { RouterView } from "vue-router";
+import Default from "./layouts/default.vue";
+import { shallowRef } from "vue";
 
-const layout = shallowRef(Default)
-
+const layout = shallowRef(Default);
 </script>
 
 <template>
   <component :is="layout">
-    <RouterView 
-      :currentLayout="layout" 
-      @update:currentLayout="newLayout => layout = newLayout" 
+    <RouterView
+      :currentLayout="layout"
+      @update:currentLayout="(newLayout) => (layout = newLayout)"
     />
   </component>
 </template>

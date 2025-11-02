@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="toggle">Toggle Hello World msg</button>
-    <transition 
+    <transition
       name="slide"
       enter-active-class="swing"
       leave-active-class="tada"
@@ -11,19 +11,23 @@
   </div>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 const show = ref(true);
 const msg = "Welcome to your Vue.js App";
-const toggle = () => show.value = !show.value;
-
+const toggle = () => (show.value = !show.value);
 </script>
 <style>
 @keyframes slide {
-  0% { transform: translateX(-100px)}
-  100% { transform: translateX(0px)}
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
-.slide-enter-from, .slide-leave-to {
+.slide-enter-from,
+.slide-leave-to {
   transform: translateX(-100px);
 }
 
@@ -38,17 +42,23 @@ const toggle = () => show.value = !show.value;
 @keyframes tada {
   0% {
     transform: scale3d(1, 1, 1);
- }
-
-  10%, 20% {
-    transform: scale3d(.8, .9, .8) rotate3d(0, 0, 1, -5deg);
   }
 
-  30%, 50%, 70%, 90% {
+  10%,
+  20% {
+    transform: scale3d(0.8, 0.9, 0.8) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 5deg);
   }
 
-  40%, 60%, 80% {
+  40%,
+  60%,
+  80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -5deg);
   }
 
@@ -58,13 +68,22 @@ const toggle = () => show.value = !show.value;
 }
 
 @keyframes swing {
-  20% { transform: rotate(5deg); }
-  40% { transform: rotate(-10deg); }
-  60% { transform: rotate(5deg); }
-  80% { transform: rotate(-10deg); }
-  100% { transform: rotate(0deg); }
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 .tada {
   animation-fill-mode: both;
@@ -79,6 +98,3 @@ const toggle = () => show.value = !show.value;
   animation-name: swing;
 }
 </style>
-
-
-

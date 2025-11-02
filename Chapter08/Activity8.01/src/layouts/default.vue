@@ -2,7 +2,7 @@
   <div class="default">
     <h1>Messages section</h1>
     <main>
-      <slot/>
+      <slot />
     </main>
   </div>
 </template>

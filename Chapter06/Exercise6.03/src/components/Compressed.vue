@@ -6,9 +6,9 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 
-const { title, description } = defineProps(['title', 'description'])
+const { title, description } = defineProps(["title", "description"]);
 </script>
 
 <style scoped>

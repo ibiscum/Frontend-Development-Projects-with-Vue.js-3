@@ -55,7 +55,7 @@ onUpdated(() => {
 
 onBeforeUpdate(() => {
   alert(
-    "beforeUpdate: we know an update is about to happen, and have the data"
+    "beforeUpdate: we know an update is about to happen, and have the data",
   );
 });
 

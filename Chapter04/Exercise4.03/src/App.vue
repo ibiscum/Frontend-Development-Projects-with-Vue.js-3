@@ -4,11 +4,11 @@
   </main>
 </template>
 <script>
-import Repeat from './components/RepeatMe.vue'
+import Repeat from "./components/RepeatMe.vue";
 
 export default {
   components: {
-    Repeat 
-  }
-}
+    Repeat,
+  },
+};
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div>
     <p v-for="(m, i) in messages" :key="i">
       {{ m }}
     </p>
@@ -10,8 +10,8 @@ export default {
   props: {
     messages: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

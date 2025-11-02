@@ -1,30 +1,32 @@
 <script setup>
-defineOptions({ name: 'ProductList' })
-import { useCartStore } from '@/stores/cart';
-const store = useCartStore()
+defineOptions({ name: "ProductList" });
+import { useCartStore } from "@/stores/cart";
+const store = useCartStore();
 </script>
 
 <template>
-<h2>Products</h2>
-<table>
-	<thead>
-	<tr>
-		<th>Name</th>
-		<th>Price</th>
-		<th>&nbsp;</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr v-for="(product, idx) in store.products" :key="idx">
-		<td>{{ product.name }}</td>
-		<td>{{ product.price  }}</td>
-		<td>
-		<button @click="store.addToCart(product)">Add to Cart</button> 
-		<button @click="store.removeFromCart(product)">Remove from Cart</button>
-		</td>
-	</tr>
-	</tbody>
-</table>
+  <h2>Products</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(product, idx) in store.products" :key="idx">
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <button @click="store.addToCart(product)">Add to Cart</button>
+          <button @click="store.removeFromCart(product)">
+            Remove from Cart
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <style scoped>

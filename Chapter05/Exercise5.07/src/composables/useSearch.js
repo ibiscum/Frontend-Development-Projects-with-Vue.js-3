@@ -1,11 +1,13 @@
-import { ref, computed } from 'vue';
+import { ref, computed } from "vue";
 
-export const useSearch = (items, filters = ['title']) => {
-  const searchTerm = ref('');
+export const useSearch = (items, filters = ["title"]) => {
+  const searchTerm = ref("");
   const filteredItems = computed(() => {
-    return items.value.filter(item => {
-      return filters.some(filter => {
-        return item[filter].toLowerCase().includes(searchTerm.value.toLowerCase());
+    return items.value.filter((item) => {
+      return filters.some((filter) => {
+        return item[filter]
+          .toLowerCase()
+          .includes(searchTerm.value.toLowerCase());
       });
     });
   });
@@ -13,5 +15,5 @@ export const useSearch = (items, filters = ['title']) => {
   return {
     searchTerm,
     filteredItems,
-  }
-}
+  };
+};

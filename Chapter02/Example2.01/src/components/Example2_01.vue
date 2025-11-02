@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-model="name">
+    <input v-model="name" />
     <div>
       <span>{{ error }}</span>
     </div>

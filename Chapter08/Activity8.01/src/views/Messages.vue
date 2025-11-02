@@ -4,17 +4,13 @@
     <router-link :to="{ name: 'editor' }">Editor</router-link>
     <router-view v-slot="{ Component }">
       <transition name="fade" enter-active-class="zoom-in">
-        <component
-          :is="Component"
-          :list="messages"
-          @list:update="addMessage"
-        />
+        <component :is="Component" :list="messages" @list:update="addMessage" />
       </transition>
     </router-view>
   </div>
 </template>
 <script setup>
-import DefaultLayout from '../layouts/default.vue';
+import DefaultLayout from "../layouts/default.vue";
 import { reactive } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute();
@@ -31,7 +27,7 @@ const props = defineProps({
 });
 
 const emits = defineEmits(["update:currentLayout"]);
-emits('update:currentLayout', DefaultLayout);
+emits("update:currentLayout", DefaultLayout);
 
 const messages = reactive(route.meta.messages || []);
 const addMessage = (message) => {
@@ -46,7 +42,9 @@ const addMessage = (message) => {
 }
 
 .fade-enter-active {
-  transition: opacity 2s, transform 3s;
+  transition:
+    opacity 2s,
+    transform 3s;
 }
 .fade-enter {
   opacity: 0;

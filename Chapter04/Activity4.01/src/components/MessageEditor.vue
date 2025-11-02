@@ -1,10 +1,6 @@
 <template>
   <div>
-    <textarea
-      ref="textArea"
-      @change="onChange($event)"
-    >
-    </textarea>
+    <textarea ref="textArea" @change="onChange($event)"> </textarea>
     <button @click="onSendClick()">Send</button>
   </div>
 </template>
@@ -12,18 +8,18 @@
 export default {
   data() {
     return {
-      message: ''
-    }
+      message: "",
+    };
   },
   methods: {
     onChange(event) {
-      this.message = event.target.value
+      this.message = event.target.value;
     },
     onSendClick() {
-      this.$emit('send', this.message)
-      this.message = ''
-      this.$refs.textArea.value = ''
-    }
-  }
-}
+      this.$emit("send", this.message);
+      this.message = "";
+      this.$refs.textArea.value = "";
+    },
+  },
+};
 </script>

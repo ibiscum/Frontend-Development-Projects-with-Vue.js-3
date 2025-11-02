@@ -1,6 +1,6 @@
 <script setup>
-import { useCartStore } from '@/stores/cart';
-const store = useCartStore()
+import { useCartStore } from "@/stores/cart";
+const store = useCartStore();
 </script>
 
 <template>
@@ -13,14 +13,11 @@ const store = useCartStore()
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="(product, idx) in store.cart"
-        :key="idx"
-	  >
-		<td>{{ product.name }}</td>
-		<td>{{ product.quantity  }}</td>
-	  </tr>
-	</tbody>
+      <tr v-for="(product, idx) in store.cart" :key="idx">
+        <td>{{ product.name }}</td>
+        <td>{{ product.quantity }}</td>
+      </tr>
+    </tbody>
   </table>
 </template>
 

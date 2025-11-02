@@ -1,17 +1,8 @@
 <template>
   <div class="container">
-    <input
-      v-model="firstName"
-      placeholder="First name"
-    >
-    <input
-      v-model="lastName"
-      placeholder="Last name"
-    >
-    <input
-      placeholder="Add a language"
-      @keyup.enter="addToLanguageList"
-    >
+    <input v-model="firstName" placeholder="First name" />
+    <input v-model="lastName" placeholder="Last name" />
+    <input placeholder="Add a language" @keyup.enter="addToLanguageList" />
     <h3 class="output">
       {{ fullName }}
     </h3>
@@ -20,18 +11,18 @@
 </template>
 
 <script setup>
-import { ref, computed, reactive } from 'vue'
+import { ref, computed, reactive } from "vue";
 
-const firstName = ref('')
-const lastName = ref('')
+const firstName = ref("");
+const lastName = ref("");
 const languages = reactive([]);
 const fullName = computed(() => `${firstName.value} ${lastName.value}`);
 const numberOfLanguages = computed(() => languages.length);
 const addToLanguageList = (event) => {
   if (!event.target.value) return;
-  
+
   languages.push(event.target.value);
-  event.target.value = '';
+  event.target.value = "";
 };
 </script>
 

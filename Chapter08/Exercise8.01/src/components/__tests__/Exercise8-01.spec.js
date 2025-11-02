@@ -1,31 +1,31 @@
-import { describe, it, expect } from 'vitest'
-import { mount } from '@vue/test-utils'
-import Exercise from '../Exercise8-01.vue'
+import { describe, it, expect } from "vitest";
+import { mount } from "@vue/test-utils";
+import Exercise from "../Exercise8-01.vue";
 
-describe('Exercise8-01.vue', () => {
-  it('should render message', () => {
-    const message = 'hello'
+describe("Exercise8-01.vue", () => {
+  it("should render message", () => {
+    const message = "hello";
     const wrapper = mount(Exercise, {
       data() {
         return {
-            message
-        }
+          message,
+        };
       },
-    })
-    
-    expect(wrapper.find('.message--display span').text()).toBe(message)
-  })
-  it('should not render message', () => {
-    const msg = 'new message'
+    });
+
+    expect(wrapper.find(".message--display span").text()).toBe(message);
+  });
+  it("should not render message", () => {
+    const msg = "new message";
     const wrapper = mount(Exercise, {
       data() {
         return {
-          message: ''
-        }
+          message: "",
+        };
       },
-      propsData: { msg }
-    })
-    
-    expect(wrapper.find('.message--display').exists()).toBe(false)
-  })
-})
+      propsData: { msg },
+    });
+
+    expect(wrapper.find(".message--display").exists()).toBe(false);
+  });
+});

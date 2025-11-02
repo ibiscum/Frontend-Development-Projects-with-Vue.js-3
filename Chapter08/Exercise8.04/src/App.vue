@@ -14,7 +14,7 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import gsap from "gsap";
-import { onMounted, ref } from 'vue'
+import { onMounted, ref } from "vue";
 
 const logo = ref();
 

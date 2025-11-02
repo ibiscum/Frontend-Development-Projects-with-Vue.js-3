@@ -6,9 +6,7 @@
       >
         Commentator Pro
       </h2>
-      <label for="email">
-        Enter your email:
-      </label>
+      <label for="email"> Enter your email: </label>
       <input id="email" type="email" v-model="email" required />
       <button
         v-if="email"
@@ -30,12 +28,12 @@
           class="flex mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           :disabled="!newComment || isSubmitting"
           :class="{
-            'opacity-50 cursor-not-allowed' : !newComment,
-            spinner: isSubmitting
+            'opacity-50 cursor-not-allowed': !newComment,
+            spinner: isSubmitting,
           }"
           @click="submitNewComment()"
         >
-        Submit
+          Submit
         </button>
       </div>
       <ul
@@ -60,51 +58,50 @@
 </template>
 
 <script>
-import fetch from 'unfetch'
+import fetch from "unfetch";
 
 export default {
   data() {
     return {
       showEditor: false,
-      newComment: '',
+      newComment: "",
       isSubmitting: false,
       comments: [],
-      email: ''
-    }
+      email: "",
+    };
   },
   mounted() {
-    fetch('https://jsonplaceholder.typicode.com/comments')
-      .then(res => res.json())
-      .then(comments => {
-        this.comments = comments
-      })
+    fetch("https://jsonplaceholder.typicode.com/comments")
+      .then((res) => res.json())
+      .then((comments) => {
+        this.comments = comments;
+      });
   },
   methods: {
     submitNewComment() {
-      this.isSubmitting = true
+      this.isSubmitting = true;
 
-      fetch('https://jsonplaceholder.typicode.com/comments', {
-        method: 'POST',
+      fetch("https://jsonplaceholder.typicode.com/comments", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           email: this.email,
-          body: this.newComment
-        })
-      }).then(res => res.json())
-      .then(data => {
-        this.comments = [
-          data,
-          ...this.comments,
-        ]
-        this.isSubmitting = false
-        this.newComment = ''
-        this.showEditor = false
-      }).catch(() => {
-        this.isSubmitting = false
+          body: this.newComment,
+        }),
       })
-    }
-  }
-}
+        .then((res) => res.json())
+        .then((data) => {
+          this.comments = [data, ...this.comments];
+          this.isSubmitting = false;
+          this.newComment = "";
+          this.showEditor = false;
+        })
+        .catch(() => {
+          this.isSubmitting = false;
+        });
+    },
+  },
+};
 </script>

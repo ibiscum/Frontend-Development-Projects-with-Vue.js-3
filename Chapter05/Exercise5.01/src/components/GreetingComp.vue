@@ -3,7 +3,6 @@
 </template>
 
 <script setup>
-  const greeting = "Hello";
-  const who = "John";
+const greeting = "Hello";
+const who = "John";
 </script>
-
