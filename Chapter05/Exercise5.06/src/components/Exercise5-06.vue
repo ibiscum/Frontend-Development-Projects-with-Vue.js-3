@@ -35,6 +35,7 @@ const list = ref([
   "The Division 2",
   "Hypnospace Outlaw",
   "Katana ZERO",
+  "everyone there"
 ]);
 
 const deleteItem = (value) => {
