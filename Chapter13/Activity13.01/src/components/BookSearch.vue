@@ -3,8 +3,17 @@
     <form @submit.prevent="fetchBooks()">
       <label for="title">Find a book</label>
       <div class="search-bar">
-        <input type="text" id="title" v-model="title" />
-        <button :disabled="!title || isLoading" type="submit">Search</button>
+        <input
+          id="title"
+          v-model="title"
+          type="text"
+        >
+        <button
+          :disabled="!title || isLoading"
+          type="submit"
+        >
+          Search
+        </button>
       </div>
       <div v-if="books.length > 0">
         <ul>
@@ -12,7 +21,10 @@
             resultsCount
           }}
           books found.
-          <li v-for="book in books" :key="book.id">
+          <li
+            v-for="book in books"
+            :key="book.id"
+          >
             <a :href="book.canonicalVolumeLink">{{ book.title }}</a>
             <span v-if="book.authors">- {{ book.authors.join(", ") }}</span>
           </li>

@@ -88,8 +88,14 @@
     "Chapter12/Exercise12.02",
     "Chapter12/Exercise12.03",
     "Chapter12/Exercise12.04",
+    "Chapter13/Activity13.01",
+    "Chapter13/Exercise13.01",
+    "Chapter13/Exercise13.02",
+    "Chapter14/Activity14.01",
     "Chapter14/Exercise14.01",
-    "Chapter14/Exercise14.04"
+    "Chapter14/Exercise14.02",
+    "Chapter14/Exercise14.03",
+     "Chapter14/Exercise14.04"
   ],
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^5.1.1",
