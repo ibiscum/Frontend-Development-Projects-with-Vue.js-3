@@ -2,9 +2,8 @@
   <h3>Author:</h3>
   <p>{{ message.author }}</p>
 </template>
-<script setup>
-import { defineProps } from "vue";
 
+<script setup>
 const { message } = defineProps({
   id: {
     default: "",

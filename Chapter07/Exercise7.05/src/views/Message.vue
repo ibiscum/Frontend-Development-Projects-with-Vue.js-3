@@ -6,8 +6,8 @@
     <RouterView />
   </div>
 </template>
+
 <script setup>
-import { defineProps } from "vue";
 const { message } = defineProps({
   message: {
     default: () => ({ content: "" }),

@@ -3,9 +3,8 @@
     <h1>About {{ user }}</h1>
   </div>
 </template>
-<script setup>
-import { defineProps } from "vue";
 
+<script setup>
 const { user } = defineProps({
   user: {
     default: "",

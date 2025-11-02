@@ -4,9 +4,8 @@
     <p>{{ message.sent }}</p>
   </div>
 </template>
-<script setup>
-import { defineProps } from "vue";
 
+<script setup>
 const { message } = defineProps({
   id: {
     default: "",
