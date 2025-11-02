@@ -1,9 +1,22 @@
 <template>
-    <div>
-        <button @click="showEditor = !showEditor" v-if="!showEditor">Add new blog</button>
-        <BlogEditor v-else @addNewItem="addItem"/>
-        <Blogs :blogs="blogs" :is-loading="isLoading" :error="error" @deleteBlog="deleteItem"/>
-    </div>
+  <div>
+    <button
+      v-if="!showEditor"
+      @click="showEditor = !showEditor"
+    >
+      Add new blog
+    </button>
+    <BlogEditor
+      v-else
+      @add-new-item="addItem"
+    />
+    <Blogs
+      :blogs="blogs"
+      :is-loading="isLoading"
+      :error="error"
+      @delete-blog="deleteItem"
+    />
+  </div>
 </template>
 <script setup>
 import BlogEditor from './BlogEditor.vue';

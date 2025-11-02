@@ -10,38 +10,52 @@
     <section v-else>
       <div class="search">
         <label for="search">Search:</label>
-        <input type="text" id="search" v-model="searchTerm" />
+        <input
+          id="search"
+          v-model="searchTerm"
+          type="text"
+        >
       </div>
       <fieldset>
         <div>Filter by: </div>
-        <input type="checkbox" id="title" value="title" v-model="filters" />
+        <input
+          id="title"
+          v-model="filters"
+          type="checkbox"
+          value="title"
+        >
         <label for="title">By Title</label>
         <input
-          type="checkbox"
           id="content"
-          value="description"
           v-model="filters"
-        />
+          type="checkbox"
+          value="description"
+        >
         <label for="content">By Content</label>
       </fieldset>
       <ul class="articles-list">
         <li>
-          <article v-for="(blog, i) in filteredBlogs" :key="i">
+          <article
+            v-for="(blog, i) in filteredBlogs"
+            :key="i"
+          >
             <div class="article-item-info">
-                <img
+              <img
                 v-if="blog.heroImage"
                 class="thumbnail"
                 :src="`${blog.heroImage.fields.file.url}?fit=scale&w=350&h=196`"
-                />
-                <div class="article-text">
+              >
+              <div class="article-text">
                 <div class="date">
-                    {{ new Date(blog.publishDate).toDateString() }}
+                  {{ new Date(blog.publishDate).toDateString() }}
                 </div>
                 <h4>{{ blog.title }}</h4>
                 <p>{{ blog.description }}</p>
-                </div>
+              </div>
             </div>            
-            <button @click="emits('deleteBlog', blog.id)">Delete</button>
+            <button @click="emits('deleteBlog', blog.id)">
+              Delete
+            </button>
           </article>
         </li>
       </ul>
