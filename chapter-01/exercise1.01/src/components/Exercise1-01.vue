@@ -2,10 +2,6 @@
   <h1>My first component!</h1>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style>
 h1 {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

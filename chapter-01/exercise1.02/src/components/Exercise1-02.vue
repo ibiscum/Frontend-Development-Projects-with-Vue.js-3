@@ -4,21 +4,21 @@
   </div>
 </template>
 
-<!-- <script>
+<script>
 export default {
   data() {
     return {
-      title: "My first component!",
+      title: 'My first component!',
       isUppercase: false,
-    };
+    }
   },
-};
-</script> -->
-
-<script setup>
-const title = "My first component!";
-const isUppercase = true;
+}
 </script>
+
+<!-- <script setup>
+const title = 'My first component!';
+const isUppercase = true;
+</script> -->
 
 <style>
 h1 {
