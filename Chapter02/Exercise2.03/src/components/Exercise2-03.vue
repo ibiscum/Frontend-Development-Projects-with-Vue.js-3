@@ -6,7 +6,9 @@
       <strike>Was {{ oldDiscount }}%</strike>
       <strong> Now {{ discount }}% OFF</strong>
     </div>
-    <button @click="updateDiscount">Increase Discount!</button>
+    <button @click="updateDiscount">
+      Increase Discount!
+    </button>
   </div>
 </template>
 
@@ -18,14 +20,14 @@ export default {
       discount: 5,
     };
   },
-  methods: {
-    updateDiscount() {
-      this.discount = this.discount + 5;
-    },
-  },
   watch: {
     discount(newValue, oldValue) {
       this.oldDiscount = oldValue;
+    },
+  },
+  methods: {
+    updateDiscount() {
+      this.discount = this.discount + 5;
     },
   },
 };

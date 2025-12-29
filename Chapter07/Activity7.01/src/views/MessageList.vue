@@ -1,7 +1,10 @@
 <template>
   <div>
     <h2>Message Feed</h2>
-    <div v-for="(m, i) in list" :key="i">
+    <div
+      v-for="(m, i) in list"
+      :key="i"
+    >
       <router-link :to="`/message/${i}`">
         {{ i }}
       </router-link>

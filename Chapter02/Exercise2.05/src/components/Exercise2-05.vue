@@ -6,7 +6,9 @@
       {{ loading ? "Loading..." : "Learn something profound" }}
     </button>
 
-    <blockquote v-if="quote">{{ quote }}</blockquote>
+    <blockquote v-if="quote">
+      {{ quote }}
+    </blockquote>
   </div>
 </template>
 

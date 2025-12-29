@@ -1,7 +1,10 @@
 <template>
   <div>
     <h2>Message Feed</h2>
-    <p v-for="(m, i) in messages" :key="i">
+    <p
+      v-for="(m, i) in messages"
+      :key="i"
+    >
       {{ m }}
     </p>
   </div>

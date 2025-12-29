@@ -13,7 +13,10 @@ const store = useCartStore();
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(product, idx) in store.cart" :key="idx">
+      <tr
+        v-for="(product, idx) in store.cart"
+        :key="idx"
+      >
         <td>{{ product.name }}</td>
         <td>{{ product.quantity }}</td>
       </tr>

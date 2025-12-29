@@ -1,11 +1,21 @@
 <template>
-  <div id="app" class="container">
+  <div
+    id="app"
+    class="container"
+  >
     <h1>Vue devtools debugging</h1>
 
-    <input v-model="input" type="text" placeholder="Filter list" />
+    <input
+      v-model="input"
+      type="text"
+      placeholder="Filter list"
+    >
 
     <ul>
-      <li v-for="(item, i) in computedList" :key="i">
+      <li
+        v-for="(item, i) in computedList"
+        :key="i"
+      >
         {{ item }}
       </li>
     </ul>

@@ -5,10 +5,13 @@
       v-model="searchTerm"
       type="text"
       placeholder="Search by blog's title"
-    />
+    >
   </label>
   <ul>
-    <li v-for="(blog, index) in getFilteredBlogs()" :key="index">
+    <li
+      v-for="(blog, index) in getFilteredBlogs()"
+      :key="index"
+    >
       <article>
         <h3>{{ blog.title }}</h3>
         <h4>{{ blog.author }}</h4>

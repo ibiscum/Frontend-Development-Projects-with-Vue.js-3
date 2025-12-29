@@ -9,12 +9,10 @@ import CookieBanner from "./components/CookieBanner.vue";
     <h1>The Vue.js Workshop Blog</h1>
   </header>
 
-  <router-view :posts="posts"></router-view>
+  <router-view :posts="posts" />
 
   <CookieBanner />
 </template>
-
-<style></style>
 
 <script>
 export default {
@@ -44,3 +42,5 @@ export default {
   },
 };
 </script>
+
+<style></style>

@@ -3,13 +3,18 @@
 
   <p>
     <label for="email">Enter your email:</label>
-    <input v-model="email" data-test-id="email-input" type="email" required />
+    <input
+      v-model="email"
+      data-test-id="email-input"
+      type="email"
+      required
+    >
   </p>
 
   <button
-    @click="showEditor = !showEditor"
     :disabled="!email"
     data-test-id="new-comment-button"
+    @click="showEditor = !showEditor"
   >
     Add a New Comment
   </button>
@@ -17,9 +22,9 @@
   <div v-if="showEditor">
     <p>
       <textarea
-        data-test-id="new-comment-editor"
         v-model="newComment"
-      ></textarea>
+        data-test-id="new-comment-editor"
+      />
     </p>
     <p>
       <button
@@ -33,7 +38,10 @@
     </p>
   </div>
 
-  <div v-if="comments.length > 0" data-test-id="comments-list">
+  <div
+    v-if="comments.length > 0"
+    data-test-id="comments-list"
+  >
     <div
       v-for="(comment, index) in comments"
       :key="comment.id + index"
@@ -46,12 +54,6 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.submitting {
-  font-style: italic;
-}
-</style>
 
 <script>
 export default {
@@ -97,3 +99,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.submitting {
+  font-style: italic;
+}
+</style>

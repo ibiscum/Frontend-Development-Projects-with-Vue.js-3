@@ -2,16 +2,19 @@
   <div>
     <h1>Vue Lifecycle hooks</h1>
     <ul>
-      <li v-for="(item, n) in list" :key="n">
+      <li
+        v-for="(item, n) in list"
+        :key="n"
+      >
         {{ item }}
-        <button @click="deleteItem(item)">Delete</button>
+        <button @click="deleteItem(item)">
+          Delete
+        </button>
       </li>
     </ul>
 
-    <strong
-      >Add a new item in the list array and save while running localhost to
-      preview the destroy hooks</strong
-    >
+    <strong>Add a new item in the list array and save while running localhost to
+      preview the destroy hooks</strong>
   </div>
 </template>
 
@@ -30,11 +33,6 @@ export default {
         "Katana ZERO",
       ],
     };
-  },
-  methods: {
-    deleteItem(value) {
-      this.list = this.list.filter((item) => item !== value);
-    },
   },
 
   beforeCreate() {
@@ -62,6 +60,11 @@ export default {
   },
   unmounted() {
     alert("destroyed: this component has been destroyed");
+  },
+  methods: {
+    deleteItem(value) {
+      this.list = this.list.filter((item) => item !== value);
+    },
   },
 };
 </script>

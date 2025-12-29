@@ -1,16 +1,19 @@
 <template>
   <h2>Commentator Pro</h2>
 
-  <button @click="showEditor = !showEditor" data-test-id="new-comment-button">
+  <button
+    data-test-id="new-comment-button"
+    @click="showEditor = !showEditor"
+  >
     Add a New Comment
   </button>
 
   <div v-if="showEditor">
     <p>
       <textarea
-        data-test-id="new-comment-editor"
         v-model="newComment"
-      ></textarea>
+        data-test-id="new-comment-editor"
+      />
     </p>
     <p>
       <button
@@ -24,12 +27,6 @@
     </p>
   </div>
 </template>
-
-<style scoped>
-.submitting {
-  font-style: italic;
-}
-</style>
 
 <script>
 export default {
@@ -51,3 +48,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.submitting {
+  font-style: italic;
+}
+</style>

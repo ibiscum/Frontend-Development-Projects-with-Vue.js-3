@@ -3,22 +3,38 @@
     <h2>Shopping list</h2>
     <div class="user-input">
       <input
-        placeholder="Press enter to add new item"
-        v-model="input"
-        @keyup.enter="addItem"
         ref="input"
-      />
-      <button @click="addItem">Add item</button>
+        v-model="input"
+        placeholder="Press enter to add new item"
+        @keyup.enter="addItem"
+      >
+      <button @click="addItem">
+        Add item
+      </button>
     </div>
 
     <ul v-if="shoppingList">
-      <li v-for="(item, i) in shoppingList" :key="i" class="item">
+      <li
+        v-for="(item, i) in shoppingList"
+        :key="i"
+        class="item"
+      >
         <span>{{ item }}</span>
-        <button class="button--remove" @click="deleteItem(i)">Remove</button>
+        <button
+          class="button--remove"
+          @click="deleteItem(i)"
+        >
+          Remove
+        </button>
       </li>
     </ul>
-    <br />
-    <button class="button--delete" @click="deleteAll()">Delete all</button>
+    <br>
+    <button
+      class="button--delete"
+      @click="deleteAll()"
+    >
+      Delete all
+    </button>
   </div>
 </template>
 

@@ -10,11 +10,14 @@
         {{ option.name }}
       </option>
     </select>
-    <div class="grid" :class="{ 'grid-column': layout === List }">
+    <div
+      class="grid"
+      :class="{ 'grid-column': layout === List }"
+    >
       <component
+        :is="layout"
         v-for="item in items"
         :key="item.id"
-        :is="layout"
         :title="item.title"
         :description="item.description"
         :url="item.url"

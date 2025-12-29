@@ -1,9 +1,15 @@
 <template>
   <div>
-    <button v-if="!showEditor" @click="showEditor = !showEditor">
+    <button
+      v-if="!showEditor"
+      @click="showEditor = !showEditor"
+    >
       Add new blog
     </button>
-    <BlogEditor v-else @add-new-item="addItem" />
+    <BlogEditor
+      v-else
+      @add-new-item="addItem"
+    />
     <BlogsComp
       :blogs="blogs"
       :is-loading="isLoading"

@@ -7,7 +7,7 @@
       src="./assets/logo.svg"
       width="125"
       height="125"
-    />
+    >
   </header>
   <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>

@@ -5,8 +5,13 @@
     <div>Cart({{ totalItems }}) {{ formatCurrency(totalCost) }}</div>
 
     <ul>
-      <li v-for="n in 5" :key="n">
-        <button @click="addToCart(n)">Add {{ formatCurrency(n) }}</button>
+      <li
+        v-for="n in 5"
+        :key="n"
+      >
+        <button @click="addToCart(n)">
+          Add {{ formatCurrency(n) }}
+        </button>
       </li>
     </ul>
   </div>

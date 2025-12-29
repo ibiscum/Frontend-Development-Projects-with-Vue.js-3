@@ -2,12 +2,19 @@
   <div>
     <div id="nav">
       <nav>
-        <RouterLink to="/">Home</RouterLink> |
-        <RouterLink to="/messages">Messages</RouterLink>
+        <RouterLink to="/">
+          Home
+        </RouterLink> |
+        <RouterLink to="/messages">
+          Messages
+        </RouterLink>
       </nav>
     </div>
     <router-view v-slot="{ Component, route }">
-      <transition :name="route.meta.transition || transition" :mode="mode">
+      <transition
+        :name="route.meta.transition || transition"
+        :mode="mode"
+      >
         <component :is="Component" />
       </transition>
     </router-view>

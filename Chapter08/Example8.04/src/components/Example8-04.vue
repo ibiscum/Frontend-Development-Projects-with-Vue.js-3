@@ -1,8 +1,17 @@
 <template>
   <div>
-    <button @click="showList">Show list</button>
-    <transition-group name="fade" tag="div">
-      <p v-for="message in messages" :key="message" v-show="show">
+    <button @click="showList">
+      Show list
+    </button>
+    <transition-group
+      name="fade"
+      tag="div"
+    >
+      <p
+        v-for="message in messages"
+        v-show="show"
+        :key="message"
+      >
         {{ message }}
       </p>
     </transition-group>

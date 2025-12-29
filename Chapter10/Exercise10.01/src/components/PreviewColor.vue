@@ -17,7 +17,10 @@ const previewRGB = computed(() => {
 <template>
   <div>
     <h2>Preview Color</h2>
-    <div class="previewColor" :style="previewRGB"></div>
+    <div
+      class="previewColor"
+      :style="previewRGB"
+    />
     <p>CSS color string: {{ previewRGB.backgroundColor }}</p>
   </div>
 </template>

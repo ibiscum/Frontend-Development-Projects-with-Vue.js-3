@@ -1,7 +1,11 @@
 <template>
-  <button @click="show = !show">Toggle</button>
+  <button @click="show = !show">
+    Toggle
+  </button>
   <transition name="fade-in">
-    <h1 v-show="show">{{ msg }}</h1>
+    <h1 v-show="show">
+      {{ msg }}
+    </h1>
   </transition>
 </template>
 <script setup>

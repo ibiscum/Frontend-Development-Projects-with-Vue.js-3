@@ -5,7 +5,9 @@
       <h4>{{ product.label }}</h4>
       <h5>${{ product.price }} (${{ discount }} Off)</h5>
     </div>
-    <button @click="updatePrice">Reduce Price!</button>
+    <button @click="updatePrice">
+      Reduce Price!
+    </button>
   </div>
 </template>
 
@@ -20,15 +22,15 @@ export default {
       },
     };
   },
+  watch: {
+    "product.price"() {
+      this.discount++;
+    },
+  },
   methods: {
     updatePrice() {
       if (this.product.price < 1) return;
       this.product.price--;
-    },
-  },
-  watch: {
-    "product.price"() {
-      this.discount++;
     },
   },
 };

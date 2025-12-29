@@ -1,10 +1,23 @@
 <template>
   <div>
-    <button @click="sorting()">Sort A-Z</button>
-    <button @click="sorting(true)">Sort Z-A</button>
-    <button @click="shuffle()">Shuffle</button>
-    <transition-group name="flip" tag="div">
-      <p v-for="message in messages" :key="message" class="message--item">
+    <button @click="sorting()">
+      Sort A-Z
+    </button>
+    <button @click="sorting(true)">
+      Sort Z-A
+    </button>
+    <button @click="shuffle()">
+      Shuffle
+    </button>
+    <transition-group
+      name="flip"
+      tag="div"
+    >
+      <p
+        v-for="message in messages"
+        :key="message"
+        class="message--item"
+      >
         {{ message }}
       </p>
     </transition-group>

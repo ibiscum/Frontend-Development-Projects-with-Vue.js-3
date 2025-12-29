@@ -14,7 +14,9 @@ const showBanner = computed(() => {
   <div v-if="showBanner">
     <strong>Subscribe to the newsletter</strong>
 
-    <button @click="store.dismissSubscriberBanner()">Close</button>
+    <button @click="store.dismissSubscriberBanner()">
+      Close
+    </button>
   </div>
 </template>
 

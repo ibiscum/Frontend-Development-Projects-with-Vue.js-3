@@ -1,12 +1,16 @@
 <template>
   <div>
-    <button @click="toggle">Toggle Hello World msg</button>
+    <button @click="toggle">
+      Toggle Hello World msg
+    </button>
     <transition
       name="slide"
       enter-active-class="swing"
       leave-active-class="tada"
     >
-      <h1 v-if="show">{{ msg }}</h1>
+      <h1 v-if="show">
+        {{ msg }}
+      </h1>
     </transition>
   </div>
 </template>

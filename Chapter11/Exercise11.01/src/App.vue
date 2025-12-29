@@ -10,8 +10,6 @@ import PostList from "./components/PostList.vue";
   <PostList :posts="posts" />
 </template>
 
-<style></style>
-
 <script>
 export default {
   data() {
@@ -34,3 +32,5 @@ export default {
   },
 };
 </script>
+
+<style></style>

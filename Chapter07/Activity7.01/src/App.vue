@@ -9,8 +9,8 @@ const layout = shallowRef(Default);
 <template>
   <component :is="layout">
     <RouterView
-      :currentLayout="layout"
-      @update:currentLayout="(newLayout) => (layout = newLayout)"
+      :current-layout="layout"
+      @update:current-layout="(newLayout) => (layout = newLayout)"
     />
   </component>
 </template>

@@ -6,10 +6,16 @@
       <strike>Was ${{ pizza.price }}</strike>
       <strong> Now at ${{ newPrice }} ONLY</strong>
     </div>
-    <button @click="updateDiscount" class="decrease-btn">
+    <button
+      class="decrease-btn"
+      @click="updateDiscount"
+    >
       Get a discount!
     </button>
-    <button @click="increasePrice" class="increase-btn">
+    <button
+      class="increase-btn"
+      @click="increasePrice"
+    >
       Increase the price!
     </button>
   </div>

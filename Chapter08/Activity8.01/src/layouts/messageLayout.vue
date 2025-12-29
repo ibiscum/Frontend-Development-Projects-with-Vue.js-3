@@ -4,7 +4,9 @@
     <main>
       <slot />
     </main>
-    <button @click="goBack">Back</button>
+    <button @click="goBack">
+      Back
+    </button>
   </div>
 </template>
 <script>

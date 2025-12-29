@@ -4,30 +4,53 @@
 
     <div class="col">
       <input
+        v-model="input"
         type="text"
         placeholder="Search with method"
-        v-model="input"
         @keyup="searchMethod"
-      />
+      >
 
       <ul>
-        <li v-for="(item, i) in methodFilterList" :key="i">{{ item }}</li>
+        <li
+          v-for="(item, i) in methodFilterList"
+          :key="i"
+        >
+          {{ item }}
+        </li>
       </ul>
     </div>
 
     <div class="col">
-      <input type="text" placeholder="Search with computed" v-model="input2" />
+      <input
+        v-model="input2"
+        type="text"
+        placeholder="Search with computed"
+      >
 
       <ul>
-        <li v-for="(item, i) in computedList" :key="i">{{ item }}</li>
+        <li
+          v-for="(item, i) in computedList"
+          :key="i"
+        >
+          {{ item }}
+        </li>
       </ul>
     </div>
 
     <div class="col">
-      <input type="text" placeholder="Search with watcher" v-model="input3" />
+      <input
+        v-model="input3"
+        type="text"
+        placeholder="Search with watcher"
+      >
 
       <ul>
-        <li v-for="(item, i) in watchFilterList" :key="i">{{ item }}</li>
+        <li
+          v-for="(item, i) in watchFilterList"
+          :key="i"
+        >
+          {{ item }}
+        </li>
       </ul>
     </div>
   </div>
@@ -58,8 +81,12 @@ export default {
       watchFilterList: [],
     };
   },
-  created() {
-    this.searchMethod();
+  computed: {
+    computedList() {
+      return this.frameworkList.filter((item) => {
+        return item.toLowerCase().includes(this.input2.toLowerCase());
+      });
+    },
   },
   watch: {
     input3: {
@@ -71,12 +98,8 @@ export default {
       immediate: true,
     },
   },
-  computed: {
-    computedList() {
-      return this.frameworkList.filter((item) => {
-        return item.toLowerCase().includes(this.input2.toLowerCase());
-      });
-    },
+  created() {
+    this.searchMethod();
   },
   methods: {
     searchMethod() {

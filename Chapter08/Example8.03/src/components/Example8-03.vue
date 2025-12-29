@@ -1,13 +1,17 @@
 <template>
   <div>
-    <button @click="toggle">Toggle Hello World msg</button>
+    <button @click="toggle">
+      Toggle Hello World msg
+    </button>
     <transition
+      :css="false"
       @before-enter="beforeEnter"
       @enter="enter"
       @leave="leave"
-      :css="false"
     >
-      <h1 v-if="show">{{ msg }}</h1>
+      <h1 v-if="show">
+        {{ msg }}
+      </h1>
     </transition>
   </div>
 </template>

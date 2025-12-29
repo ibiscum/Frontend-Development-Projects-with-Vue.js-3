@@ -21,7 +21,12 @@ defineProps({
     </p>
 
     <ul>
-      <li v-for="tag in tags" :key="tag">#{{ tag }}</li>
+      <li
+        v-for="tag in tags"
+        :key="tag"
+      >
+        #{{ tag }}
+      </li>
     </ul>
   </div>
 </template>

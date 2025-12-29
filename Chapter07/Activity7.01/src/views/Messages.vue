@@ -1,9 +1,17 @@
 <template>
   <div>
-    <router-link :to="{ name: 'list' }">List</router-link> |
-    <router-link :to="{ name: 'editor' }">Editor</router-link>
+    <router-link :to="{ name: 'list' }">
+      List
+    </router-link> |
+    <router-link :to="{ name: 'editor' }">
+      Editor
+    </router-link>
     <router-view v-slot="{ Component }">
-      <component :is="Component" :list="messages" @list:update="addMessage" />
+      <component
+        :is="Component"
+        :list="messages"
+        @list:update="addMessage"
+      />
     </router-view>
   </div>
 </template>

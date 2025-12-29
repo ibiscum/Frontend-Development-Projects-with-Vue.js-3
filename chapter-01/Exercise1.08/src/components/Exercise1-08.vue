@@ -2,8 +2,13 @@
   <div>
     <h1>Triggering Vue Methods</h1>
     <ul>
-      <li v-for="n in 5" :key="n">
-        <button @click="triggerAlert(n)">Trigger {{ n }}</button>
+      <li
+        v-for="n in 5"
+        :key="n"
+      >
+        <button @click="triggerAlert(n)">
+          Trigger {{ n }}
+        </button>
       </li>
     </ul>
   </div>

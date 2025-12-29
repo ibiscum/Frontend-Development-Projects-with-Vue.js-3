@@ -11,8 +11,8 @@ import PreviewColor from "./components/PreviewColor.vue";
   </p>
 
   <div class="twocol">
-    <RGBEdit></RGBEdit>
-    <PreviewColor></PreviewColor>
+    <RGBEdit />
+    <PreviewColor />
   </div>
 </template>
 

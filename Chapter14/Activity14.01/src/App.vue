@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="p-10">
+  <div
+    id="app"
+    class="p-10"
+  >
     <div class="flex flex-col">
       <h2
         class="uppercase leading-loose pb-4 flex justify-center m-auto md:w-1/3 text-xl mb-8 font-bold text-gray-800 border-b"
@@ -7,7 +10,10 @@
         Commentator Pro
       </h2>
       <div class="flex flex-col mx-auto mb-4">
-        <label class="flex text-gray-700 text-sm font-bold mb-2" for="email">
+        <label
+          class="flex text-gray-700 text-sm font-bold mb-2"
+          for="email"
+        >
           Enter your email:
         </label>
         <input
@@ -17,7 +23,7 @@
           data-test-id="email-input"
           class="flex shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           required
-        />
+        >
       </div>
       <button
         class="flex mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <div v-for="todo in todos" :key="todo.id">
+    <div
+      v-for="todo in todos"
+      :key="todo.id"
+    >
       <ul>
         <li>Title: {{ todo.title }}</li>
         <li>Status: {{ todo.completed ? "Completed" : "Not Completed" }}</li>
@@ -10,14 +13,14 @@
 </template>
 <script>
 export default {
+  data() {
+    return { todos: [] };
+  },
   async mounted() {
     const { data: todos } = await this.$axios(
       "https://jsonplaceholder.typicode.com/todos",
     );
     this.todos = todos;
-  },
-  data() {
-    return { todos: [] };
   },
 };
 </script>

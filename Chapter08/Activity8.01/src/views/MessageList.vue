@@ -2,13 +2,16 @@
   <div>
     <h2>Message Feed</h2>
     <transition-group
-      @appear="enter"
       tag="div"
       appear
       move-class="flip"
       :css="false"
+      @appear="enter"
     >
-      <div v-for="(m, i) in list" :key="m">
+      <div
+        v-for="(m, i) in list"
+        :key="m"
+      >
         <router-link :to="`/message/${i}`">
           {{ i }}
         </router-link>

@@ -45,7 +45,7 @@ const relevantPosts = computed(() => {
     <h1>The Vue.js Workshop Blog</h1>
   </header>
 
-  <router-view :posts="relevantPosts"></router-view>
+  <router-view :posts="relevantPosts" />
 
   <CookieBanner />
 </template>

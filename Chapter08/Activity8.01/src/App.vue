@@ -1,11 +1,14 @@
 <template>
   <component :is="layout">
     <router-view v-slot="{ Component }">
-      <transition :name="route.meta.transition || transition" :mode="mode">
+      <transition
+        :name="route.meta.transition || transition"
+        :mode="mode"
+      >
         <component
           :is="Component"
           :list="messages"
-          @update:currentLayout="(newLayout) => (layout = newLayout)"
+          @update:current-layout="(newLayout) => (layout = newLayout)"
         />
       </transition>
     </router-view>

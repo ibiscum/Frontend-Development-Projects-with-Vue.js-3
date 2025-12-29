@@ -1,8 +1,17 @@
 <template>
   <div>
     <form @submit.prevent="onSubmit()">
-      <input v-model="searchTerm" placeholder="Search" type="text" />
-      <button type="submit" id="search">Search</button>
+      <input
+        v-model="searchTerm"
+        placeholder="Search"
+        type="text"
+      >
+      <button
+        id="search"
+        type="submit"
+      >
+        Search
+      </button>
     </form>
   </div>
 </template>

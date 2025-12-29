@@ -3,22 +3,39 @@
     <h1>Blog Editor</h1>
     <div class="field">
       <label for="title">Title</label>
-      <input id="title" v-model="title" type="text" />
+      <input
+        id="title"
+        v-model="title"
+        type="text"
+      >
     </div>
     <div class="field">
       <label for="slug">Blog id</label>
-      <input id="slug" v-model="id" type="text" />
+      <input
+        id="slug"
+        v-model="id"
+        type="text"
+      >
     </div>
     <div class="field">
       <label for="author">Author</label>
-      <input id="author" v-model="author" type="text" />
+      <input
+        id="author"
+        v-model="author"
+        type="text"
+      >
     </div>
     <div class="field">
       <label for="content">Content</label>
-      <textarea id="content" v-model="content" />
+      <textarea
+        id="content"
+        v-model="content"
+      />
     </div>
     <div class="field">
-      <button @click="save">Save</button>
+      <button @click="save">
+        Save
+      </button>
     </div>
   </div>
 </template>

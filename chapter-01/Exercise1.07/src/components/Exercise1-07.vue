@@ -7,7 +7,10 @@ const information = {
 </script>
 <template>
   <div>
-    <div v-for="(value, key) in information" :key="key">
+    <div
+      v-for="(value, key) in information"
+      :key="key"
+    >
       {{ key }}: {{ value.toString() }}
     </div>
   </div>

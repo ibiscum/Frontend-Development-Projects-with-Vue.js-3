@@ -1,8 +1,17 @@
 <template>
   <div class="container">
-    <input v-model="firstName" placeholder="First name" />
-    <input v-model="lastName" placeholder="Last name" />
-    <input placeholder="Add a language" @keyup.enter="addToLanguageList" />
+    <input
+      v-model="firstName"
+      placeholder="First name"
+    >
+    <input
+      v-model="lastName"
+      placeholder="Last name"
+    >
+    <input
+      placeholder="Add a language"
+      @keyup.enter="addToLanguageList"
+    >
     <h3 class="output">
       {{ fullName }}
     </h3>

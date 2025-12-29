@@ -17,11 +17,11 @@ const post = computed(() => {
 });
 
 const title = computed(() => {
-  return post && post.value.title;
+  return post.value && post.value.title;
 });
 
 const content = computed(() => {
-  return post && post.value.content;
+  return post.value && post.value.content;
 });
 </script>
 

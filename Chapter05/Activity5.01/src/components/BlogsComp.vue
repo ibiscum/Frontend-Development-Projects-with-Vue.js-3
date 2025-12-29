@@ -10,29 +10,41 @@
     <section v-else>
       <div class="search">
         <label for="search">Search:</label>
-        <input id="search" v-model="searchTerm" type="text" />
+        <input
+          id="search"
+          v-model="searchTerm"
+          type="text"
+        >
       </div>
       <fieldset>
         <div>Filter by:</div>
-        <input id="title" v-model="filters" type="checkbox" value="title" />
+        <input
+          id="title"
+          v-model="filters"
+          type="checkbox"
+          value="title"
+        >
         <label for="title">By Title</label>
         <input
           id="content"
           v-model="filters"
           type="checkbox"
           value="description"
-        />
+        >
         <label for="content">By Content</label>
       </fieldset>
       <ul class="articles-list">
         <li>
-          <article v-for="(blog, i) in filteredBlogs" :key="i">
+          <article
+            v-for="(blog, i) in filteredBlogs"
+            :key="i"
+          >
             <div class="article-item-info">
               <img
                 v-if="blog.heroImage"
                 class="thumbnail"
                 :src="`${blog.heroImage.fields.file.url}?fit=scale&w=350&h=196`"
-              />
+              >
               <div class="article-text">
                 <div class="date">
                   {{ new Date(blog.publishDate).toDateString() }}
@@ -41,7 +53,9 @@
                 <p>{{ blog.description }}</p>
               </div>
             </div>
-            <button @click="emits('deleteBlog', blog.id)">Delete</button>
+            <button @click="emits('deleteBlog', blog.id)">
+              Delete
+            </button>
           </article>
         </li>
       </ul>

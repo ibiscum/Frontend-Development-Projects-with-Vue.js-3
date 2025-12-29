@@ -1,22 +1,35 @@
 <template>
   <div id="app">
-    <div v-if="name" class="author">
+    <div
+      v-if="name"
+      class="author"
+    >
       <h2>
         {{ name }}
       </h2>
-      <h3 v-if="title">{{ title }}</h3>
-      <p v-if="bio">{{ bio }}</p>
+      <h3 v-if="title">
+        {{ title }}
+      </h3>
+      <p v-if="bio">
+        {{ bio }}
+      </p>
     </div>
     <div class="articles">
-      <hr />
+      <hr>
       <h2>Articles</h2>
-      <section v-if="posts" class="articles-list">
-        <article v-for="(post, i) in posts" :key="i">
+      <section
+        v-if="posts"
+        class="articles-list"
+      >
+        <article
+          v-for="(post, i) in posts"
+          :key="i"
+        >
           <img
             v-if="post.fields.heroImage"
             class="thumbnail"
             :src="`${post.fields.heroImage.fields.file.url}?fit=scale&w=350&h=196`"
-          />
+          >
           <div class="article-text">
             <div class="date">
               {{ new Date(post.fields.publishDate).toDateString() }}
@@ -39,7 +52,7 @@ const client = createClient({
 });
 
 export default {
-  name: "app",
+  name: "App",
   data() {
     return {
       authors: [],

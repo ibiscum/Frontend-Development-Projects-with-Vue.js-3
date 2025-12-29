@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <input type="number" v-model="incrementOne" />
+    <input
+      v-model="incrementOne"
+      type="number"
+    >
     <h3>Get input: {{ incrementOne }}</h3>
     <h5>Set division: {{ divideByTwo }}</h5>
   </div>

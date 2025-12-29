@@ -1,7 +1,9 @@
 <template>
   <div>
-    <textarea v-model="message"> </textarea>
-    <button @click="onSendClick()">Submit</button>
+    <textarea v-model="message" />
+    <button @click="onSendClick()">
+      Submit
+    </button>
   </div>
 </template>
 <script setup>

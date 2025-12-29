@@ -6,7 +6,12 @@ const store = useCartStore();
 <template>
   <h2>Checkout</h2>
   Your total is ${{ store.cartTotal }}.
-  <button v-show="store.cartTotal > 0" @click="checkout">Checkout</button>
+  <button
+    v-show="store.cartTotal > 0"
+    @click="checkout"
+  >
+    Checkout
+  </button>
 </template>
 
 <script>

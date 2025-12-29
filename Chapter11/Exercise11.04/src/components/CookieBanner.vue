@@ -14,7 +14,9 @@ const acceptedCookie = computed(() => {
   <div v-if="!acceptedCookie">
     <strong>Cookies Disclaimer</strong>
     We use cookies to improve our experience.
-    <button @click="store.acceptCookie">I agree</button>
+    <button @click="store.acceptCookie">
+      I agree
+    </button>
   </div>
 </template>
 

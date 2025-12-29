@@ -1,15 +1,26 @@
 <template>
   <div>
     <div class="editor--wrapper">
-      <textarea ref="textArea" class="editor" />
-      <button @click="onSendClick()" class="editor--submit">Submit</button>
+      <textarea
+        ref="textArea"
+        class="editor"
+      />
+      <button
+        class="editor--submit"
+        @click="onSendClick()"
+      >
+        Submit
+      </button>
     </div>
     <transition
       name="slide-right"
       enter-active-class="slide-right"
       leave-active-class="slide-left"
     >
-      <section v-if="message" class="message--display">
+      <section
+        v-if="message"
+        class="message--display"
+      >
         <h4>Your saved message:</h4>
         <span>{{ message }}</span>
       </section>

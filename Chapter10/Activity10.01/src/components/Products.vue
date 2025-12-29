@@ -15,11 +15,16 @@ const store = useCartStore();
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(product, idx) in store.products" :key="idx">
+      <tr
+        v-for="(product, idx) in store.products"
+        :key="idx"
+      >
         <td>{{ product.name }}</td>
         <td>{{ product.price }}</td>
         <td>
-          <button @click="store.addToCart(product)">Add to Cart</button>
+          <button @click="store.addToCart(product)">
+            Add to Cart
+          </button>
           <button @click="store.removeFromCart(product)">
             Remove from Cart
           </button>
