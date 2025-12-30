@@ -1,5 +1,5 @@
 {
-  "name": "exercise1.11",
+  "name": "@chapter-01/exercise1.11",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
