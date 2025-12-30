@@ -2,7 +2,7 @@
   <div>
     <h2>Message Feed</h2>
     <div
-      v-for="(m, i) in messages"
+      v-for="(m, i) in props.messages"
       :key="i"
     >
       <RouterLink :to="`/message?content=${m}`">
@@ -11,11 +11,14 @@
     </div>
   </div>
 </template>
+
 <script setup>
 const props = defineProps({
   messages: {
     type: Array,
-    default: [],
+    default() {
+      return []
+    },
   },
 });
 </script>

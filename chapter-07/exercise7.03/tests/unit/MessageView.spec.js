@@ -1,5 +1,6 @@
+import { describe, it, expect } from 'vitest';
 import { shallowMount } from "@vue/test-utils";
-import Message from "@/views/Message.vue";
+import Message from "@/views/MessageView.vue";
 
 describe("Message.vue", () => {
   it("renders component", () => {
