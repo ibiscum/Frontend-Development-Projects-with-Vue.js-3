@@ -1,7 +1,8 @@
-import { shallowMount, mount, createLocalVue } from "@vue/test-utils";
+import { describe, it, expect } from 'vitest';
+import { mount } from "@vue/test-utils";
 import App from "@/App.vue";
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "@/views/HomeView.vue";
+// import Home from "@/views/HomeView.vue";
 import { routes } from "@/router/index.js";
 
 const router = createRouter({
