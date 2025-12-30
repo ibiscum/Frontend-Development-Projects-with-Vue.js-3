@@ -1,7 +1,7 @@
 import { shallowMount, mount, createLocalVue } from "@vue/test-utils";
 import { createRouter, createWebHistory } from "vue-router";
 import { routes } from "@/router/index.js";
-import Messages from "@/views/Messages.vue";
+import Messages from "@/views/MessagesView.vue";
 
 const router = createRouter({
   history: createWebHistory(),

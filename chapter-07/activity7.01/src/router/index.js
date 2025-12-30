@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Messages from "../views/Messages.vue";
+import Messages from "../views/MessagesView.vue";
+
 const messages = ["hello"];
 
 export const routes = [
@@ -15,13 +16,13 @@ export const routes = [
       {
         path: "list",
         name: "list",
-        component: () => import("../views/MessageList.vue"),
+        component: () => import("../views/MessageListView.vue"),
         props: true,
       },
       {
         path: "editor",
         name: "editor",
-        component: () => import("../views/MessageEditor.vue"),
+        component: () => import("../views/MessageEditorView.vue"),
         props: true,
       },
     ],
@@ -29,7 +30,7 @@ export const routes = [
   {
     path: "/message/:id",
     name: "message",
-    component: () => import("../views/Message.vue"),
+    component: () => import("../views/MessageView.vue"),
     props: true,
     beforeEnter(to, from, next) {
       if (to.params && to.params.id) {

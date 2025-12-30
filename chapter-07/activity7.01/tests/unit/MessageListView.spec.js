@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import MessageList from "@/views/MessageList.vue";
+import MessageList from "@/views/MessageListView.vue";
 
 describe("MessageList.vue", () => {
   it("renders component", () => {

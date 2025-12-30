@@ -4,8 +4,9 @@
     <router-view />
   </div>
 </template>
+
 <script setup>
-import MessageLayout from "../layouts/messageLayout.vue";
+import MessageLayout from "../layouts/MessageLayout.vue";
 
 const props = defineProps({
   content: {

@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import DefaultLayout from "../layouts/default.vue";
+import DefaultLayout from "../layouts/DefaultLayout.vue";
 import { useRoute } from "vue-router";
 import { reactive } from "vue";
 
