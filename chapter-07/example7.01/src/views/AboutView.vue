@@ -1,12 +1,12 @@
 <template>
   <div class="”about”">
-    <h2>Age: {{ age }}</h2>
+    <h2>Age: {{ props.age }}</h2>
   </div>
 </template>
+
 <script setup>
-import { defineProps } from "vue";
 const props = defineProps({
-  age: Number,
+  age: {type: Number, default: 0},
 });
 </script>
 

@@ -13,7 +13,7 @@ import { ref } from "vue";
 const name = ref("");
 const age = ref(0);
 
-const props = defineProps(["id"]);
+const props = defineProps({id: {type: Number, default: 0}});
 name.value = users[props.id - 1].name;
 age.value = users[props.id - 1].age;
 </script>

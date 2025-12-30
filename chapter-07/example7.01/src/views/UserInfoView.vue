@@ -4,12 +4,13 @@
     <p>Age: {{ age }}</p>
   </div>
 </template>
+
 <script setup>
 import users from "../assets/users.js";
 import { ref } from "vue";
 import { onBeforeRouteUpdate } from "vue-router";
 
-const props = defineProps(["id"]);
+const props = defineProps({id: {type: Number, default: 0}});
 
 const name = ref("");
 const age = ref(0);

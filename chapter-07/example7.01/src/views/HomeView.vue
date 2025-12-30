@@ -1,6 +1,6 @@
 <script>
 import TheWelcome from "@/components/TheWelcome.vue";
-import DefaultLayout from "../layouts/default.vue";
+import DefaultLayout from "../layouts/DefaultLayout.vue";
 
 export default {
   name: "HomeView",

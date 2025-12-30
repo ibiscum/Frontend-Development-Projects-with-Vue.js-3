@@ -25,30 +25,30 @@ const routes = [
   {
     path: "/user/:id",
     name: "user",
-    component: () => import("../views/User.vue"),
+    component: () => import("../views/UserView.vue"),
     props: true,
     children: [
       {
         path: "info",
         name: "userinfo",
-        component: () => import("../views/UserInfo.vue"),
+        component: () => import("../views/UserInfoView.vue"),
         props: true,
       },
       {
         path: "extra",
-        component: () => import("../views/UserExtra.vue"),
+        component: () => import("../views/UserExtraView.vue"),
       },
     ],
   },
   {
     path: "/:pathMatch(.*)*",
     name: "404",
-    component: () => import("../views/404.vue"),
+    component: () => import("../views/NotFoundView.vue"),
   },
   {
     path: "/error",
     name: "error",
-    component: () => import("../views/Error.vue"),
+    component: () => import("../views/ErrorView.vue"),
   },
 ];
 
