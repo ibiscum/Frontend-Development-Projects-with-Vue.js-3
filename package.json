@@ -10,7 +10,8 @@
     "chapter-01/*",
     "chapter-02/*",
     "chapter-05/*",
-    "chapter-06/*"
+    "chapter-06/*",
+    "chapter-07/*"
   ],
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^5.1.1",

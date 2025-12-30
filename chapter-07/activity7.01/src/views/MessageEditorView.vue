@@ -6,6 +6,7 @@
     </button>
   </div>
 </template>
+
 <script setup>
 import { ref } from "vue";
 import { onBeforeRouteLeave } from "vue-router";

@@ -1,5 +1,5 @@
 {
-  "name": "example01",
+  "name": "@chapter-07/example7.01",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,10 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix ."
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
