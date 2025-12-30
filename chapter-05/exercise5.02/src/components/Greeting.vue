@@ -1,8 +1,10 @@
 <template>
   <div>{{ greeting }} {{ who }}</div>
 </template>
+
 <script>
 import { h } from "vue";
+
 export default {
   props: ["greeting", "who"],
   setup(props) {
@@ -11,10 +13,10 @@ export default {
       hasValue
         ? h("div", `${props.greeting} ${props.who}`)
         : h(
-            "div",
-            { style: { color: "red" } },
-            "There is not enough information to display",
-          );
+          "div",
+          { style: { color: "red" } },
+          "There is not enough information to display",
+        );
   },
 };
 </script>

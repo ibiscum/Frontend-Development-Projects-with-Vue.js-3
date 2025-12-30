@@ -8,7 +8,8 @@
   },
   "workspaces": [
     "chapter-01/*",
-    "chapter-02/*"
+    "chapter-02/*",
+    "chapter-05/*"
   ],
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^5.1.1",
