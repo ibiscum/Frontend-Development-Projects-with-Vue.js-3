@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div
-      v-for="todo in todos"
-      :key="todo.id"
-    >
+    <div v-for="todo in todos" :key="todo.id">
       <ul>
         <li>Title: {{ todo.title }}</li>
         <li>Status: {{ todo.completed ? "Completed" : "Not Completed" }}</li>
@@ -11,6 +8,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {

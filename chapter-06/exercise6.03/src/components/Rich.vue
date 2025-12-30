@@ -1,9 +1,6 @@
 <template>
   <div class="card">
-    <img
-      :src="url"
-      width="200"
-    >
+    <img :src="url" width="200">
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
   </div>
@@ -23,6 +20,7 @@ const { url, title, description } = defineProps([
   flex-direction: column;
   max-width: 200px;
 }
+
 h3 {
   font-weight: normal;
   margin-bottom: 0;
