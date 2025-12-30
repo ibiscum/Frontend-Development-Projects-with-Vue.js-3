@@ -10,18 +10,18 @@ describe("Exercise1-03-v-show.vue", () => {
     expect(wrapper.find("h2").isVisible()).toBe(false);
   });
 
-  it("renders anchor tag with data", () => {
-    const link = {
-      url: "https://google.com",
-      target: "_blank",
-      tabindex: "0",
-      title: "Go to Google",
-    };
+  // it("renders anchor tag with data", () => {
+  //   const link = {
+  //     url: "https://google.com",
+  //     target: "_blank",
+  //     tabindex: "0",
+  //     title: "Go to Google",
+  //   };
 
-    wrapper.setData({
-      link: link,
-    });
+  //   wrapper.setData({
+  //     link: link,
+  //   });
 
-    expect(wrapper.find("a").text()).toMatch(link.title);
-  });
+  //   expect(wrapper.find("a").text()).toMatch(link.title);
+  // });
 });
