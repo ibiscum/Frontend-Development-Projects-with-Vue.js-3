@@ -11,11 +11,12 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import { defineProps } from "vue";
 const { messages } = defineProps({
   messages: {
-    default: [],
+    default() { return [] },
     type: Array,
   },
 });

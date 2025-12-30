@@ -15,7 +15,7 @@ const routes = [
   {
     path: "/messagesFeed",
     name: "messageFeed",
-    component: () => import("../views/MessageFeed.vue"),
+    component: () => import("../views/MessageFeedView.vue"),
     props: (route) => ({
       messages: route.query.messages?.length > 0 ? route.query.messages : [],
     }),
@@ -34,7 +34,7 @@ const routes = [
   {
     path: "/message/:id",
     name: "message",
-    component: () => import("../views/Message.vue"),
+    component: () => import("../views/MessageView.vue"),
     props: (route) => ({ id: route.params.id, content: route.query.content }),
     async beforeEnter(to, from, next) {
       if (to.params && to.params.id) {
