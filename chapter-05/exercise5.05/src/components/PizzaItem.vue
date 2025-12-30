@@ -3,19 +3,13 @@
     <h1>{{ pizza.name }}</h1>
     <div class="campaign-wrapper">
       Monday Special: {{ discount }}% off!
-      <strike>Was ${{ pizza.price }}</strike>
+      <del>Was ${{ pizza.price }}</del>
       <strong> Now at ${{ newPrice }} ONLY</strong>
     </div>
-    <button
-      class="decrease-btn"
-      @click="updateDiscount"
-    >
+    <button class="decrease-btn" @click="updateDiscount">
       Get a discount!
     </button>
-    <button
-      class="increase-btn"
-      @click="increasePrice"
-    >
+    <button class="increase-btn" @click="increasePrice">
       Increase the price!
     </button>
   </div>
@@ -63,6 +57,7 @@ watch(
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+
 .campaign-wrapper {
   margin: 20px 0;
   display: flex;

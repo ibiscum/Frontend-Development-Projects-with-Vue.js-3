@@ -1,5 +1,5 @@
 {
-  "name": "exercise5.05",
+  "name": "@chapter-05/exercise5.05",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,10 +9,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "preview": "vite preview --port 5050",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
