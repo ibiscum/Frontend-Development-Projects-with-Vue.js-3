@@ -7,7 +7,8 @@
     "format": "prettier --write --ignore-unknown ."
   },
   "workspaces": [
-    "chapter-01/*"
+    "chapter-01/*",
+    "chapter-02/*"
   ],
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^5.1.1",
