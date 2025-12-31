@@ -1,6 +1,6 @@
 <template>
   <main>
-    <Repeat :config="{ times: 3, content: 'Repeat me.' }" />
+    <Repeat :config="{ times: 3, content: 'Repeat me. ' }" />
   </main>
 </template>
 <script>

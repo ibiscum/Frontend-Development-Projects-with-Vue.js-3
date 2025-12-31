@@ -1,9 +1,9 @@
 import { describe, it, expect } from "vitest";
 
 import { mount } from "@vue/test-utils";
-import Greeting from "../Greeting.vue";
+import Greeting from "../GreetingComp.vue";
 
-describe("Greeting", () => {
+describe("GreetingComp.vue", () => {
   it("renders properly", () => {
     const wrapper = mount(Greeting, {
       props: { greeting: "Hello", who: "Vitest" },
