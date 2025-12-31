@@ -1,5 +1,5 @@
 {
-  "name": "exercise3.01",
+  "name": "@chapter-03/exercise3.01",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix ."
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "vite-plugin-vue-devtools": "^8.0.5"
+  }
 }
