@@ -1,25 +1,27 @@
 <template>
   <div>
-    <input v-model="name">
+    <input v-model="fullname">
     <div>
       <span>{{ error }}</span>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
     return {
-      name: "",
+      fullname: "",
     };
   },
   computed: {
     error() {
-      return this.name ? "" : "Name is required";
+      return this.fullname ? "" : "Name is required";
     },
   },
 };
 </script>
+
 <style>
 h1 {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

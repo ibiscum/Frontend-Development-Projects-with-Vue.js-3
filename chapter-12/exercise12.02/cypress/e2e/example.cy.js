@@ -1,4 +1,6 @@
 // https://docs.cypress.io/api/introduction/api.html
+import cy from "cypress";
+const {  describe, it, } = cy;
 
 describe("Commentator Pro", () => {
   it('Has a h2 with "Commentator Pro"', () => {

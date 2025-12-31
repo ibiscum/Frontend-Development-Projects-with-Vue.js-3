@@ -1,5 +1,5 @@
-import cy from "cypress";
-const { describe, it } = cy;
+// import cy from "cypress";
+// const { describe, it } = cy;
 import HelloWorld from "../HelloWorld.vue";
 
 describe("HelloWorld", () => {

@@ -1,3 +1,5 @@
+import tailwindcssSpinner from "tailwindcss-spinner";
+
 export const theme = {
   extend: {},
   spinner: (theme) => ({
@@ -12,4 +14,4 @@ export const theme = {
 export const variants = {
   spinner: ["responsive"],
 };
-export const plugins = [require("tailwindcss-spinner")()];
+export const plugins = [tailwindcssSpinner()];

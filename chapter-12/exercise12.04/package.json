@@ -1,8 +1,8 @@
 {
-  "name": "exercise12.04",
+  "name": "@chapter-12/exercise12.04",
   "version": "0.0.0",
   "type": "module",
-  "private":true,
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,10 +10,9 @@
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "test:unit": "cypress open --component",
-    "test:unit:ci": "cypress run --component --quiet --reporter spec"
+    "test:unit:ci": "cypress run --component --quiet --reporter spec",
+    "lint": "eslint --fix ."
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

@@ -5,6 +5,7 @@
     <p>{{ featuredEntries }}</p>
   </div>
 </template>
+
 <script>
 export default {
   data() {

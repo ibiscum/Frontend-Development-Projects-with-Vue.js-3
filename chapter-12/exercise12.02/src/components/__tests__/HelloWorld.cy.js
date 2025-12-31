@@ -1,4 +1,6 @@
 import HelloWorld from "../HelloWorld.vue";
+import cy from "cypress";
+const { describe, it } = cy;
 
 describe("HelloWorld", () => {
   it("playground", () => {
