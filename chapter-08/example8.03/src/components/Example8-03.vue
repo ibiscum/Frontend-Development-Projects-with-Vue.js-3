@@ -3,12 +3,7 @@
     <button @click="toggle">
       Toggle Hello World msg
     </button>
-    <transition
-      :css="false"
-      @before-enter="beforeEnter"
-      @enter="enter"
-      @leave="leave"
-    >
+    <transition :css="false" @before-enter="beforeEnter" @enter="enter" @leave="leave">
       <h1 v-if="show">
         {{ msg }}
       </h1>

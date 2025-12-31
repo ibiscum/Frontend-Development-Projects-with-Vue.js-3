@@ -8,6 +8,7 @@
     </h1>
   </transition>
 </template>
+
 <script setup>
 import { ref } from "vue";
 

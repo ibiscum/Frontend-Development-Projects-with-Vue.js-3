@@ -1,5 +1,5 @@
 {
-  "name": "example8-03",
+  "name": "@chapter-08/example8.03",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,10 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint --fix ."
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
