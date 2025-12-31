@@ -1,5 +1,5 @@
 {
-  "name": "activity4.01",
+  "name": "@chapter-04/activity4.01",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix ."
   },
   "dependencies": {},
   "devDependencies": {}
