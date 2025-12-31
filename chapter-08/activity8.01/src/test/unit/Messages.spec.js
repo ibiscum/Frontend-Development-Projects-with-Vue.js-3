@@ -1,20 +1,21 @@
-import { shallowMount, mount, createLocalVue } from "@vue/test-utils";
-import App from "@/App.vue";
+import { mount, createLocalVue } from "@vue/test-utils";
 import VueRouter from "vue-router";
 import { routes } from "@/router/index.js";
+import Messages from "@/views/Messages.vue";
 import { describe, expect, it } from "vitest";
 
 const localVue = createLocalVue();
 localVue.use(VueRouter);
 
-describe("App", () => {
+describe("Messages", () => {
   it("renders component", async () => {
     const router = new VueRouter({ routes, mode: "abstract" });
-    const wrapper = mount(App, {
+    const wrapper = mount(Messages, {
       localVue,
       router,
     });
 
-    expect(wrapper.find("#app").exists()).toBe(true);
+    expect(wrapper.find("[href='/list']").exists()).toBe(true);
+    expect(wrapper.find("[href='/editor']").exists()).toBe(true);
   });
 });

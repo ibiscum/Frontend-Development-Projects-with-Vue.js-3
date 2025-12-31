@@ -9,7 +9,7 @@
       @appear="enter"
     >
       <div
-        v-for="(m, i) in list"
+        v-for="(m, i) in props.list"
         :key="m"
       >
         <router-link :to="`/message/${i}`">

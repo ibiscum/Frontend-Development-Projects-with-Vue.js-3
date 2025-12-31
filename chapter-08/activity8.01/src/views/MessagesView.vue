@@ -20,13 +20,14 @@
     </router-view>
   </div>
 </template>
+
 <script setup>
-import DefaultLayout from "../layouts/default.vue";
+import DefaultLayout from "../layouts/DefaultLayout.vue";
 import { reactive } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute();
 
-const props = defineProps({
+defineProps({
   list: {
     type: Array,
     default: () => [],
@@ -57,6 +58,7 @@ const addMessage = (message) => {
     opacity 2s,
     transform 3s;
 }
+
 .fade-enter {
   opacity: 0;
   transform: translateX(-20%);

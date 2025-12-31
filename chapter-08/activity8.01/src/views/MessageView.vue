@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ content }}</p>
+    <p>{{ props.content }}</p>
     <router-view />
   </div>
 </template>
