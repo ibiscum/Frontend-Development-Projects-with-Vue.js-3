@@ -1,5 +1,5 @@
 {
-  "name": "exercise4.04",
+  "name": "@chapter-04/exercise4.04",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,8 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
-    "lint": "eslint --fix",
-    "lint:scss:fix": "stylelint '**/*.scss' --syntax scss --fix -f verbose —color"
+    "lint": "eslint --fix ."
   },
   "dependencies": {},
   "devDependencies": {}

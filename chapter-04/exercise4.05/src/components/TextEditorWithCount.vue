@@ -1,10 +1,6 @@
 <template>
   <div>
-    <textarea
-      ref="textArea"
-      cols="50"
-      rows="7"
-    />
+    <textarea ref="textArea" cols="50" rows="7" />
     <ul v-if="count">
       <li>Paragraphs: {{ count.paragraphs }}</li>
       <li>Sentences: {{ count.sentences }}</li>
@@ -12,6 +8,7 @@
     </ul>
   </div>
 </template>
+
 <script>
 import * as Countable from "countable";
 export default {
