@@ -1,3 +1,6 @@
+import cy from "cypress";
+const {  describe, it, beforeEach} = cy;
+
 describe("Commentator Pro", () => {
   beforeEach(() => {
     cy.server();

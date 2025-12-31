@@ -9,10 +9,17 @@
   <div v-else>
     <div>
       <label for="search">Search:</label>
-      <input id="search" v-model="searchTerm" type="text">
+      <input
+        id="search"
+        v-model="searchTerm"
+        type="text"
+      >
     </div>
     <ul>
-      <li v-for="movie in filteredMovies" :key="movie.id">
+      <li
+        v-for="movie in filteredMovies"
+        :key="movie.id"
+      >
         <article>
           <h3>{{ movie.title }}</h3>
           <h4>Released on: {{ movie.release_date }}</h4>

@@ -1,11 +1,12 @@
-describe("Loading Existing Comments", () => {
-  it("should load & display comments", () => {
+import cy from "cypress";
+cy.describe("Loading Existing Comments", () => {
+  cy.it("should load & display comments", () => {
     cy.visit("/");
     cy.get('[data-test-id="comments-list"]').should("be.visible");
 
     cy.get('[data-test-id="comment-card"]').should("have.length.gt", 0);
   });
-  it("should load and display comments correctly", () => {
+  cy.it("should load and display comments correctly", () => {
     cy.server();
     cy.route("**/comments", [
       {

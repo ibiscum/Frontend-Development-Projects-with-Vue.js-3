@@ -1,8 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import Exercise from "../Exercise8-02.vue";
+import Exercise from "../Example8-04.vue";
 
-describe("Exercise8-02.vue", () => {
+describe("Exampleq8-04.vue", () => {
   it("should render message", () => {
     const messages = ["Hello, how are you?"];
 

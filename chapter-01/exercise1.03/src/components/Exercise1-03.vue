@@ -1,10 +1,21 @@
 <template>
   <div>
     <!-- <img v-bind:src="logo" /> -->
-    <h1 v-once v-text="text"/>
+    <h1
+      v-once
+      v-text="text"
+    />
 
-    <h2 v-html="html" v-show="false" />
-    <a :href="link.url" :target="link.target" :tabindex="link.tabindex" v-text="link.title" />
+    <h2
+      v-show="false"
+      v-html="html"
+    />
+    <a
+      :href="link.url"
+      :target="link.target"
+      :tabindex="link.tabindex"
+      v-text="link.title"
+    />
 
     <!-- <h1 v-if="false" v-once v-text="text" /> -->
     <!-- <h2 v-else-if="false" v-html="html" /> -->

@@ -3,20 +3,14 @@
     <button @click="showList">
       Show list
     </button>
-    <transition-group
-      name="fade"
-      tag="div"
-    >
-      <p
-        v-for="message in messages"
-        v-show="show"
-        :key="message"
-      >
+    <transition-group name="fade" tag="div">
+      <p v-for="message in messages" v-show="show" :key="message">
         {{ message }}
       </p>
     </transition-group>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -41,11 +35,13 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
   transition: all 5s;
 }
+
 .fade-enter-from,
 .fade-leave-active {
   opacity: 0;

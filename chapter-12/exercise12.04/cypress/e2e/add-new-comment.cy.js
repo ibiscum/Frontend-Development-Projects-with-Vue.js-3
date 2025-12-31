@@ -1,3 +1,5 @@
+import cy from "cypress";
+const { describe, it, beforeEach } = cy;
 describe("Adding a New Comment", () => {
   beforeEach(() => {
     cy.intercept("GET", "**/comments", []);

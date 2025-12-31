@@ -5,7 +5,7 @@ import { describe, it, expect } from "vitest";
 describe("Exercise2-01.vue", () => {
   const wrapper = shallowMount(Exercise, {});
 
-  it("comput fullname correctly", () => {
+  it("compute fullname correctly", () => {
     const firstName = "John";
     const lastName = "Doe";
 
