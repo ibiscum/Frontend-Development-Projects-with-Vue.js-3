@@ -9,7 +9,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "preview": "vite preview --port 5050",
-    "lint": "eslint --fix",
+    "lint": "eslint --fix .",
     "deps:check": "npx npm-check-updates",
     "deps:upgrade": "npx npm-check-updates -u && npm install"
   },

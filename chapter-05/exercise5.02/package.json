@@ -1,5 +1,5 @@
 {
-  "name": "exercise5.02",
+  "name": "@chapter-05/exercise5.02",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,10 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint --fix ."
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
