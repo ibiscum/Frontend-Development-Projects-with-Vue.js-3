@@ -1,8 +1,8 @@
 import { shallowMount } from "@vue/test-utils";
-import Movies from "@/components/Movies.vue";
+import Movies from "@/components/MoviesComp.vue";
 import { describe, it, expect } from "vitest";
 
-describe("Movies.vue", () => {
+describe("MoviesComp.vue", () => {
   const wrapper = shallowMount(Movies, {});
 
   it("render movies correctly", () => {

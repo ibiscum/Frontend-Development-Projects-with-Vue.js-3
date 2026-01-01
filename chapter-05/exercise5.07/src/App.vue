@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import Movies from "./components/Movies.vue";
+import Movies from "./components/MoviesComp.vue";
 </script>

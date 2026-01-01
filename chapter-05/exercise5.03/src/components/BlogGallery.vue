@@ -77,6 +77,7 @@ const getFilteredBlogs = () => {
   );
 };
 </script>
+
 <style scoped>
 label {
   display: flex;
