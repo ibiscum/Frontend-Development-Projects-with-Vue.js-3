@@ -1,5 +1,5 @@
 <script setup>
-import RGBEdit from "./components/RGBEdit.vue";
+import RGBEdit from "./components/RgbEdit.vue";
 import PreviewColor from "./components/PreviewColor.vue";
 </script>
 

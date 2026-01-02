@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue";
-import { useColorStore } from "@/stores/color";
+import { useColorStore } from "@/stores/color.js";
 const store = useColorStore();
 
 const previewRGB = computed(() => {
@@ -17,10 +17,7 @@ const previewRGB = computed(() => {
 <template>
   <div>
     <h2>Preview Color</h2>
-    <div
-      class="previewColor"
-      :style="previewRGB"
-    />
+    <div class="previewColor" :style="previewRGB" />
     <p>CSS color string: {{ previewRGB.backgroundColor }}</p>
   </div>
 </template>
