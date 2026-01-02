@@ -29,16 +29,16 @@
       >
     </div>
 
-    <div class="w-1/2 flex md:flex-row mt-12">
+    <div class="w-1/2 flex md:flex- mt-12">
       <button
-        class="flex md:w-1/2 justify-center"
+        class="flex md:w-1/2 justify-center px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
         type="button"
         @click="clear()"
       >
         Clear
       </button>
       <button
-        class="flex md:w-1/2 justify-center"
+        class="flex md:w-1/2 justify-center px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
         type="submit"
         @click="submitForm()"
       >

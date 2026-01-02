@@ -11,5 +11,15 @@
 </template>
 
 <script setup>
-const props = defineProps({ formData: Object });
+const props = defineProps({ 
+  formData: { 
+    type: Object, 
+    default: () => {
+      return  {
+        name : "" ,
+        occupation : "" ,
+      }
+    } 
+  }
+} );
 </script>

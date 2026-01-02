@@ -27,3 +27,12 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Tailwind CSS
+
+	npm install tailwindcss @tailwindcss/vite
+
+In vite.config.js:
+
+	import tailwindcss from '@tailwindcss/vite'
+	plugins: [ tailwindcss(), ],
