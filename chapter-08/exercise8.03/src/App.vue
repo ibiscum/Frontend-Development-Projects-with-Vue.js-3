@@ -10,16 +10,17 @@
         </RouterLink>
       </nav>
     </div>
-    <router-view v-slot="{ Component, route }">
+    <RouterView v-slot="{ Component, route }">
       <transition
         :name="route.meta.transition || transition"
         :mode="mode"
       >
         <component :is="Component" />
       </transition>
-    </router-view>
+    </RouterView>
   </div>
 </template>
+
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 
