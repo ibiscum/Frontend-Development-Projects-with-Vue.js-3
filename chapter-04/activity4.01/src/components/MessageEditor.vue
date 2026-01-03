@@ -1,6 +1,9 @@
 <template>
   <div>
-    <textarea ref="textArea" @change="onChange($event)" />
+    <textarea
+      ref="textArea"
+      @change="onChange($event)"
+    />
     <button @click="onSendClick()">
       Send
     </button>

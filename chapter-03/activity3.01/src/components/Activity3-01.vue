@@ -2,8 +2,18 @@
   <div class="container">
     <h1>Activity 3.01</h1>
     <div>
-      <input id="fname" v-model="fname" type="text" placeholder="First name">
-      <input id="lname" v-model="lname" type="text" placeholder="Last name">
+      <input
+        id="fname"
+        v-model="fname"
+        type="text"
+        placeholder="First name"
+      >
+      <input
+        id="lname"
+        v-model="lname"
+        type="text"
+        placeholder="Last name"
+      >
     </div>
     <div>
       <p>Full name: {{ fullName }}</p>

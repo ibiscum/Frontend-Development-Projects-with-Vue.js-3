@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <div v-if="name" class="author">
+    <div
+      v-if="name"
+      class="author"
+    >
       <h2>
         {{ name }}
       </h2>
@@ -14,10 +17,19 @@
     <div class="articles">
       <hr>
       <h2>Articles</h2>
-      <section v-if="posts" class="articles-list">
-        <article v-for="(post, i) in posts" :key="i">
-          <img v-if="post.fields.heroImage" class="thumbnail"
-            :src="`${post.fields.heroImage.fields.file.url}?fit=scale&w=350&h=196`">
+      <section
+        v-if="posts"
+        class="articles-list"
+      >
+        <article
+          v-for="(post, i) in posts"
+          :key="i"
+        >
+          <img
+            v-if="post.fields.heroImage"
+            class="thumbnail"
+            :src="`${post.fields.heroImage.fields.file.url}?fit=scale&w=350&h=196`"
+          >
           <div class="article-text">
             <div class="date">
               {{ new Date(post.fields.publishDate).toDateString() }}
