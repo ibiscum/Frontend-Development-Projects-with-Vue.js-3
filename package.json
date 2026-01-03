@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint --fix",
+    "test": "vitest",
+    "lint": "eslint . --fix",
     "format": "prettier --write --ignore-unknown ."
   },
   "workspaces": [

@@ -1,13 +1,11 @@
 {
-  "name": "@chapter-02/activity2.01",
+  "name": "@chapter-10/exercise10.03",
   "version": "0.0.0",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "vitest",
-    "coverage": "vitest run --coverage",
     "preview": "vite preview --port 5050",
     "lint": "eslint . --fix"
   },
