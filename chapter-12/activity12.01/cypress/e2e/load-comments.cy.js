@@ -1,3 +1,6 @@
+import cy from "cypress";
+const { describe, it } = cy;
+
 describe("Loading Existing comments", () => {
   it("should load & display comments", () => {
     cy.visit("/");

@@ -1,3 +1,6 @@
+import cy from "cypress";
+const { describe, it, beforeEach } = cy;
+
 describe("Email input", () => {
   beforeEach(() => {
     cy.intercept("GET", "**/comments", []).as("getComments");

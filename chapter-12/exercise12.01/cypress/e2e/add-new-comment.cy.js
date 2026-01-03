@@ -1,3 +1,6 @@
+import cy from "cypress";
+const { describe, it } = cy;
+
 describe("Adding a New Comment", () => {
   it("the homepage should have a button with the right text", () => {
     cy.visit("/");

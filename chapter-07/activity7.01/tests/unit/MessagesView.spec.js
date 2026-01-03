@@ -1,4 +1,4 @@
-import { shallowMount, mount, createLocalVue } from "@vue/test-utils";
+import { mount, } from "@vue/test-utils";
 import { createRouter, createWebHistory } from "vue-router";
 import { routes } from "@/router/index.js";
 import Messages from "@/views/MessagesView.vue";
