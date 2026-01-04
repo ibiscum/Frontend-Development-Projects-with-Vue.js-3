@@ -1,4 +1,4 @@
-import { ref, computed, reactive } from "vue";
+import { ref, computed, } from "vue";
 
 export const useSearch = (items) => {
   const searchTerm = ref("");

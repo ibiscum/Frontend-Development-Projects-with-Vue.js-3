@@ -44,7 +44,7 @@ const routes = [
   {
     path: "/message/:id",
     name: "message",
-    component: () => import("../views/Message.vue"),
+    component: () => import("../views/MessageView.vue"),
     beforeEnter: beforeEnterMessage,
     props: true,
     children: [

@@ -105,6 +105,7 @@ const { searchTerm, filters, filteredItems: filteredBlogs } = useSearch(blogs);
   align-items: center;
   margin-block: 20px;
 }
+
 button {
   margin-bottom: 10px;
 }
@@ -128,6 +129,7 @@ button {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 li {
   list-style: none;
 }

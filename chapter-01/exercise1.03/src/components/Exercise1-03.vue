@@ -6,10 +6,8 @@
       v-text="text"
     />
 
-    <h2
-      v-show="false"
-      v-html="html"
-    />
+    <h2 v-show="false" />
+    <!--v-html="html" -->
     <a
       :href="link.url"
       :target="link.target"
@@ -32,7 +30,7 @@
 <script setup>
 // import logo from "../assets/logo.svg";
 const text = 'Directive text';
-const html = 'Stylise</br>HTML in<br/><b>your data</b>';
+// const html = 'Stylise</br>HTML in<br/><b>your data</b>';
 const link = {
   title: "Go to Google",
   url: "https://google.com",

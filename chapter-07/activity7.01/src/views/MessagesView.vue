@@ -22,7 +22,7 @@ import { useRoute } from "vue-router";
 import { reactive } from "vue";
 
 const route = useRoute();
-const props = defineProps({
+defineProps({
   currentLayout: {
     type: Object,
     default: () => DefaultLayout,

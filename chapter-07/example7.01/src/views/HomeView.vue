@@ -7,7 +7,12 @@ export default {
   components: {
     TheWelcome,
   },
-  props: ["currentLayout"],
+  props: {
+    currentLayout: {
+      type: Object,
+      default: () => DefaultLayout,
+    }
+  },
   emits: ["update:currentLayout"],
   created() {
     this.$emit("update:currentLayout", DefaultLayout);

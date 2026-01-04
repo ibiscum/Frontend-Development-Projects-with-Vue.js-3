@@ -8,7 +8,7 @@
 <script setup>
 import MessageLayout from "../layouts/MessageLayout.vue";
 
-const props = defineProps({
+defineProps({
   content: {
     type: String,
     default: "",

@@ -12,4 +12,4 @@ export const theme = {
 export const variants = {
   spinner: ["responsive"],
 };
-export const plugins = [require("tailwindcss-spinner")()];
+export const plugins = [import("tailwindcss-spinner")()];

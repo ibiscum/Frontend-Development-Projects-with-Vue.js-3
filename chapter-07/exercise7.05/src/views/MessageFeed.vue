@@ -15,7 +15,7 @@
 <script setup>
 const { messages } = defineProps({
   messages: {
-    default: [],
+    default: () => [],
     type: Array,
   },
 });

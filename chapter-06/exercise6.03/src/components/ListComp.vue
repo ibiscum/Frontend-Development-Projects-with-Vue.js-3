@@ -3,7 +3,12 @@
 </template>
 
 <script setup>
-const { title } = defineProps(["title"]);
+const { title } = defineProps({
+  title: {
+    type: String,
+    default: "",
+  },
+});
 </script>
 
 <style scoped>

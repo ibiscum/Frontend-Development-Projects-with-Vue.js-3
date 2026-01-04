@@ -1,4 +1,4 @@
-const { initPlugin } = require("cypress-plugin-snapshots/plugin");
+import { initPlugin } from "cypress-plugin-snapshots/plugin";
 
 // https://docs.cypress.io/guides/guides/plugins-guide.html
 
@@ -10,7 +10,7 @@ const { initPlugin } = require("cypress-plugin-snapshots/plugin");
 // /* eslint-disable import/no-extraneous-dependencies, global-require */
 // const webpack = require('@cypress/webpack-preprocessor')
 
-module.exports = (on, config) => {
+export default (on, config) => {
   // on('file:preprocessor', webpack({
   //  webpackOptions: require('@vue/cli-service/webpack.config'),
   //  watchOptions: {}

@@ -23,7 +23,6 @@
 
 <script>
 export default {
-  name: "Activity",
   data() {
     return {
       fname: "",

@@ -6,7 +6,16 @@
 </template>
 
 <script setup>
-const { title, description } = defineProps(["title", "description"]);
+const { title, description } = defineProps({
+  title: {
+    type: String,
+    default: "",
+  },
+  description: {
+    type: String,
+    default: "",
+  },
+});
 </script>
 
 <style scoped>

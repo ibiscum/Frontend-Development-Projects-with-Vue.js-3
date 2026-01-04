@@ -26,6 +26,9 @@ export default defineConfig({
       'chapter-05/exercise5.05',
       'chapter-05/exercise5.06',
       'chapter-05/exercise5.07',
+      'chapter-06/activity6.01',
+      'chapter-06/exercise6.03',
+      
     ],
   },
 })

@@ -1,6 +1,7 @@
 import pluginVue from "eslint-plugin-vue";
 import globals from "globals";
 import js from "@eslint/js";
+import { globalIgnores } from "eslint/config";
 
 export default [
   // add more generic rulesets here, such as:
@@ -19,4 +20,5 @@ export default [
       },
     },
   },
+  globalIgnores(["**/cypress/*", "**/node_modules/*", "**/dist/*", "**/build/*", "**/public/*", "**/coverage/*"]),
 ];

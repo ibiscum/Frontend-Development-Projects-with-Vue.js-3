@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <img
-      :src="url"
+      :src="srcUrl"
       width="200"
     >
     <h3>{{ title }}</h3>
@@ -10,11 +10,22 @@
 </template>
 
 <script setup>
-const { url, title, description } = defineProps([
-  "url",
-  "title",
-  "description",
-]);
+defineProps(
+  {
+    srcUrl: {
+      type: String,
+      default: "",
+    },
+    title: {
+      type: String,
+      default: "",
+    },
+    description: {
+      type: String,
+      default: "",
+    }
+  }
+);
 </script>
 
 <style scoped>

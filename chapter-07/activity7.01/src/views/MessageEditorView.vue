@@ -11,7 +11,7 @@
 import { ref } from "vue";
 import { onBeforeRouteLeave } from "vue-router";
 
-const props = defineProps({
+defineProps({
   list: {
     type: Array,
     default: () => [],

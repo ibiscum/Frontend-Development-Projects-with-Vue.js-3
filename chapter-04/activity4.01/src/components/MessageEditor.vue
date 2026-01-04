@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  emits: ["send"],
   data() {
     return {
       message: "",

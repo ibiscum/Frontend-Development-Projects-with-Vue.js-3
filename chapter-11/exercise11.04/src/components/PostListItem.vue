@@ -4,9 +4,11 @@ import { computed } from "vue";
 const props = defineProps({
   title: {
     type: String,
+    default: "",
   },
   description: {
     type: String,
+    default: "",
   },
   tags: {
     type: Array,
@@ -14,6 +16,7 @@ const props = defineProps({
   },
   slug: {
     type: String,
+    default: "",
   },
 });
 
@@ -41,7 +44,7 @@ defineExpose({ truncated, ellipsis });
 
     <router-link
       v-for="tag in tags"
-      :key="tags"
+      :key="tag"
       :to="`/tags/${tag}`"
     >
       #{{ tag }}

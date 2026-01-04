@@ -1,34 +1,7 @@
-<template>
-  <div id="app">
-    Layout:
-    <select v-model="layout">
-      <option
-        v-for="(option, index) in layoutOptions"
-        :key="index"
-        :value="option.component"
-      >
-        {{ option.name }}
-      </option>
-    </select>
-    <div
-      class="grid"
-      :class="{ 'grid-column': layout === List }"
-    >
-      <component
-        :is="layout"
-        v-for="item in items"
-        :key="item.id"
-        :title="item.title"
-        :description="item.description"
-        :url="item.url"
-      />
-    </div>
-  </div>
-</template>
 <script setup>
-import Rich from "./components/Rich.vue";
-import Compressed from "./components/Compressed.vue";
-import List from "./components/List.vue";
+import Rich from "./components/RichComp.vue";
+import Compressed from "./components/CompressedComp.vue";
+import List from "./components/ListComp.vue";
 import { shallowRef } from "vue";
 
 const layout = shallowRef(Rich);
@@ -61,6 +34,35 @@ const items = [
   },
 ];
 </script>
+
+<template>
+  <div id="app">
+    Layout:
+    <select v-model="layout">
+      <option
+        v-for="(option, index) in layoutOptions"
+        :key="index"
+        :value="option.component"
+      >
+        {{ option.name }}
+      </option>
+    </select>
+    <div
+      class="grid"
+      :class="{ 'grid-column': layout === List }"
+    >
+      <component
+        :is="layout"
+        v-for="item in items"
+        :key="item.id"
+        :title="item.title"
+        :description="item.description"
+        :url="item.url"
+      />
+    </div>
+  </div>
+</template>
+
 <style scoped>
 .grid {
   display: flex;
