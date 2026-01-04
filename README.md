@@ -1,11 +1,12 @@
 # Frontend Development Projects with Vue.js 3
 
-[![CodeQL Advanced](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/codeql.yml)
-[![Dependabot Updates](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/dependabot/dependabot-updates)
+This is the code repository for [Frontend Development Projects with Vue.js 3](https://www.packtpub.com/product/frontend-development-projects-with-vuejs-3-second-edition/9781803234991), published by Packt.
 
 <a href="https://www.packtpub.com/product/frontend-development-projects-with-vuejs-3-second-edition/9781803234991"><img src="https://static.packt-cdn.com/products/9781803234991/cover/smaller" alt="" height="256px" align="right"></a>
 
-This is the code repository for [Frontend Development Projects with Vue.js 3](https://www.packtpub.com/product/frontend-development-projects-with-vuejs-3-second-edition/9781803234991), published by Packt.
+[![CodeQL Advanced](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/codeql.yml)
+[![Dependabot Updates](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/dependabot/dependabot-updates)
+[![ESLint](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/lint.yml/badge.svg)](https://github.com/ibiscum/Frontend-Development-Projects-with-Vue.js-3/actions/workflows/lint.yml)
 
 **Learn the fundamentals of building scalable web applications and dynamic user interfaces with Vue.js**
 
@@ -23,7 +24,7 @@ This book covers the following exciting features:
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1803234997) today!
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
+<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png"
 alt="https://www.packtpub.com/" border="5" /></a>
 
 ## Instructions and Navigations
