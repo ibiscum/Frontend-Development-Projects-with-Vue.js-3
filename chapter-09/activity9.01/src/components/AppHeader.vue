@@ -5,10 +5,7 @@
     <h2 class="text-xl text-gray-800">
       Profile Card Generator
     </h2>
-    <button
-      class="flex ml-auto text-gray-800 items-center"
-      @click="store.clear()"
-    >
+    <button class="flex ml-auto text-gray-800 items-center" @click="store.clear()">
       Reset
     </button>
   </header>
