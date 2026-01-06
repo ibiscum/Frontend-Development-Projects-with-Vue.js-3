@@ -7,7 +7,7 @@ import { createTestingPinia } from "@pinia/testing";
 import { userPreferencesStore } from "@/store.js";
 
 describe("CookieBanner", () => {
-  it("Cookie Banner should display if store is initialized with it not dismissed", () => {
+  it("Cookie Banner should display if store is initialized with it, not dismissed", () => {
     const wrapper = shallowMount(CookieBanner, {
       global: {
         plugins: [createTestingPinia({ createSpy: vi.fn })],
