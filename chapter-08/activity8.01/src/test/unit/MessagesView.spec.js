@@ -1,16 +1,16 @@
 import { mount, createLocalVue } from "@vue/test-utils";
 import VueRouter from "vue-router";
 import { routes } from "@/router/index.js";
-import Messages from "@/views/Messages.vue";
+import MessagesView from "@/views/MessagesView.vue";
 import { describe, expect, it } from "vitest";
 
 const localVue = createLocalVue();
 localVue.use(VueRouter);
 
-describe("Messages", () => {
+describe("MessagesView.vue", () => {
   it("renders component", async () => {
     const router = new VueRouter({ routes, mode: "abstract" });
-    const wrapper = mount(Messages, {
+    const wrapper = mount(MessagesView, {
       localVue,
       router,
     });

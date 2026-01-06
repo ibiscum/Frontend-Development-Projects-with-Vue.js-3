@@ -1,6 +1,5 @@
 <script setup>
 import { computed } from "vue";
-
 import { userPreferencesStore } from "@/store.js";
 
 const store = userPreferencesStore();

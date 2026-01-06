@@ -2,7 +2,7 @@
   "name": "activity11.01",
   "version": "0.0.0",
   "type": "module",
-  "private":true,
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +10,6 @@
     "test:unit": "vitest --environment jsdom"
   },
   "dependencies": {
-  },
-  "devDependencies": {
+    "@pinia/testing": "^1.0.3"
   }
 }

@@ -1,10 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
-import MessageEditor from "@/views/MessageEditor.vue";
+import MessageEditorView from "@/views/MessageEditorView.vue";
 import { describe, expect, it } from "vitest";
 
-describe("MessageList.vue", () => {
+describe("MessageEditorView.vue", () => {
   it("renders component", () => {
-    const wrapper = shallowMount(MessageEditor, {
+    const wrapper = shallowMount(MessageEditorView, {
       propsData: {
         list: ["123"],
       },

@@ -1,10 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
-import Message from "@/views/Message.vue";
+import MessageView from "@/views/MessageView.vue";
 import { describe, expect, it } from "vitest";
 
 describe("Message.vue", () => {
   it("renders component", () => {
-    const wrapper = shallowMount(Message, {
+    const wrapper = shallowMount(MessageView, {
       stubs: ["router-view"],
       propsData: {
         content: "123",

@@ -1,10 +1,9 @@
 import { describe, it, expect, } from "vitest";
-
 import { shallowMount } from "@vue/test-utils";
 import PostListItem from "../src/components/PostListItem.vue";
 
-describe("ellipsis", () => {
-  it("ellipsis should do nothing if value is less than 50 characters", () => {
+describe("Ellipsis", () => {
+  it("Ellipsis should do nothing if value is less than 50 characters", () => {
     const wrapper = shallowMount(PostListItem, {
       propsData: {
         title: "Blog post title",
@@ -17,7 +16,7 @@ describe("ellipsis", () => {
     expect(wrapper.vm.truncated).toMatch("Test");
   });
 
-  it('ellipsis should truncate to 50 and append "..." when longer than 50 characters', () => {
+  it('Ellipsis should truncate to 50 and append "..." when longer than 50 characters', () => {
     const wrapper = shallowMount(PostListItem, {
       propsData: {
         title: "Blog post title",
