@@ -3,15 +3,8 @@
     <form @submit.prevent="fetchBooks()">
       <label for="title">Find a book</label>
       <div class="search-bar">
-        <input
-          id="title"
-          v-model="title"
-          type="text"
-        >
-        <button
-          :disabled="!title || isLoading"
-          type="submit"
-        >
+        <input id="title" v-model="title" type="text">
+        <button :disabled="!title || isLoading" type="submit">
           Search
         </button>
       </div>
@@ -21,10 +14,7 @@
             resultsCount
           }}
           books found.
-          <li
-            v-for="book in books"
-            :key="book.id"
-          >
+          <li v-for="book in books" :key="book.id">
             <a :href="book.canonicalVolumeLink">{{ book.title }}</a>
             <span v-if="book.authors">- {{ book.authors.join(", ") }}</span>
           </li>
@@ -67,6 +57,7 @@ export default {
 label {
   margin: 40px 0 0;
 }
+
 ul {
   /* list-style-type: none; */
   padding: 0;
@@ -74,14 +65,17 @@ ul {
   width: 500px;
   margin: auto;
 }
+
 .book-search {
   width: 500px;
   margin: auto;
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
+
 .search-bar {
   display: flex;
   flex-direction: row;
@@ -90,14 +84,17 @@ form {
   align-items: center;
   margin-bottom: 25px;
 }
+
 input {
   display: flex;
   flex: 1;
 }
+
 li {
   /* display: inline-block; */
   margin: 5px 10px;
 }
+
 a {
   color: #42b983;
 }
