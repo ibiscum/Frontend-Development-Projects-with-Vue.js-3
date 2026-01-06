@@ -1,10 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { shallowMount } from "@vue/test-utils";
-import About from "@/views/AboutView.vue";
+import AboutView from "@/views/AboutView.vue";
 
 describe("AboutView.vue", () => {
   it("renders component", () => {
-    const wrapper = shallowMount(About);
+    const wrapper = shallowMount(AboutView);
     expect(wrapper.text()).toMatch("This is an about page");
   });
 });

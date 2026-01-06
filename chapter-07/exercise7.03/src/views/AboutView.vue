@@ -7,7 +7,7 @@
 <script setup>
 const { user } = defineProps({
   user: {
-    default: "",
+    default: "John Doe",
     type: String,
   },
 });

@@ -3,11 +3,7 @@
     <button @click="toggle">
       Toggle Hello World msg
     </button>
-    <transition
-      name="slide"
-      enter-active-class="swing"
-      leave-active-class="tada"
-    >
+    <transition name="slide" enter-active-class="swing" leave-active-class="tada">
       <h1 v-if="show">
         {{ msg }}
       </h1>
@@ -18,19 +14,22 @@
 <script setup>
 import { ref } from "vue";
 
-const show = ref(true);
+const show = ref(false);
 const msg = "Welcome to your Vue.js App";
 const toggle = () => (show.value = !show.value);
 </script>
+
 <style>
 @keyframes slide {
   0% {
     transform: translateX(-100px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
+
 .slide-enter-from,
 .slide-leave-to {
   transform: translateX(-100px);
@@ -76,15 +75,19 @@ const toggle = () => (show.value = !show.value);
   20% {
     transform: rotate(5deg);
   }
+
   40% {
     transform: rotate(-10deg);
   }
+
   60% {
     transform: rotate(5deg);
   }
+
   80% {
     transform: rotate(-10deg);
   }
+
   100% {
     transform: rotate(0deg);
   }

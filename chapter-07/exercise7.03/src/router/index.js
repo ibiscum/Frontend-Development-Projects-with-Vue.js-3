@@ -35,7 +35,7 @@ const routes = [
   {
     path: "/message",
     name: "message",
-    component: () => import("../views/Message.vue"),
+    component: () => import("../views/MessageView.vue"),
     props: (route) => ({ content: route.query.content }),
   },
 ];

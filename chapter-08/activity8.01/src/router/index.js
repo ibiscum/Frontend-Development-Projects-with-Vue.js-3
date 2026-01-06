@@ -6,7 +6,7 @@ export const routes = [
   {
     path: "/",
     name: "messages",
-    component: () => import("../views/Messages.vue"),
+    component: () => import("../views/MessagesView.vue"),
     beforeEnter(to, from, next) {
       to.meta.messages = messages;
       next();
@@ -15,12 +15,12 @@ export const routes = [
       {
         path: "list",
         name: "list",
-        component: () => import("../views/MessageList.vue"),
+        component: () => import("../views/MessageListView.vue"),
       },
       {
         path: "editor",
         name: "editor",
-        component: () => import("../views/MessageEditor.vue"),
+        component: () => import("../views/MessageEditorView.vue"),
         props: true,
       },
     ],
@@ -28,7 +28,7 @@ export const routes = [
   {
     path: "/message/:id",
     name: "message",
-    component: () => import("../views/Message.vue"),
+    component: () => import("../views/MessageView.vue"),
     props: true,
     beforeEnter(to, from, next) {
       if (to.params && to.params.id) {

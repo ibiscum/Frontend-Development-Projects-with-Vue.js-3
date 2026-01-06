@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { shallowMount } from "@vue/test-utils";
-import About from "@/views/About.vue";
+import About from "@/views/AboutView.vue";
 
 describe("About.vue", () => {
   it("renders component", () => {

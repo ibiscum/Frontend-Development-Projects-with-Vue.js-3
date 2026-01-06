@@ -5,7 +5,7 @@
   </div>
 </template>
 <script setup>
-import MessageLayout from "../layouts/messageLayout.vue";
+import MessageLayout from "@q/layouts/MessageLayout.vue";
 
 const props = defineProps({
   content: {

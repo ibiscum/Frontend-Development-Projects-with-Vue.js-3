@@ -1,10 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
-import Default from "@/layouts/default.vue";
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import { describe, expect, it } from "vitest";
 
-describe("Default.vue", () => {
+describe("DefaultLayout.vue", () => {
   it("should render ", () => {
-    const wrapper = shallowMount(Default);
+    const wrapper = shallowMount(DefaultLayout);
 
     expect(wrapper.find("h1").text()).toBe("Messages section");
   });

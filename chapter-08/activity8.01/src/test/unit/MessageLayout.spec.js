@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import MessageLayout from "@/layouts/messageLayout.vue";
+import MessageLayout from "@/layouts/MessageLayout.vue";
 import { describe, expect, it } from "vitest";
 
 describe("MessageLayout.vue", () => {

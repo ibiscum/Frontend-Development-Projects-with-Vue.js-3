@@ -29,7 +29,15 @@ export default defineConfig({
       'chapter-06/activity6.01',
       'chapter-06/exercise6.03',
       'chapter-07/activity7.01',
-      
+      'chapter-07/exercise7.01',
+      'chapter-07/exercise7.02',
+      'chapter-07/exercise7.03',
+      'chapter-07/exercise7.04',
+      'chapter-08/activity8.01',
+      'chapter-08/exercise8.01',
+      'chapter-08/exercise8.02', 
+      'chapter-08/exercise8.03',
+      'chapter-08/exercise8.04',
     ],
   },
 })

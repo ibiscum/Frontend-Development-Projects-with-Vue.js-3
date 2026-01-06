@@ -1,27 +1,21 @@
 <template>
   <component :is="layout">
     <router-view v-slot="{ Component }">
-      <transition
-        :name="route.meta.transition || transition"
-        :mode="mode"
-      >
-        <component
-          :is="Component"
-          :list="messages"
-          @update:current-layout="(newLayout) => (layout = newLayout)"
-        />
+      <transition :name="route.meta.transition || transition" :mode="mode">
+        <component :is="Component" :list="messages" @update:current-layout="(newLayout) => (layout = newLayout)" />
       </transition>
     </router-view>
   </component>
 </template>
+
 <script setup>
-import { RouterView } from "vue-router";
-import Default from "./layouts/default.vue";
+import { useRoute, RouterView } from "vue-router";
+import DefaultLayout from "./layouts/DefaultLayout.vue";
 import { shallowRef } from "vue";
-import { useRoute } from "vue-router";
+
 const route = useRoute();
 
-const layout = shallowRef(Default);
+const layout = shallowRef(DefaultLayout);
 const transition = "fade";
 const mode = "out-in";
 
@@ -35,6 +29,7 @@ const messages = route.meta.messages;
     opacity 2s,
     transform 3s;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;

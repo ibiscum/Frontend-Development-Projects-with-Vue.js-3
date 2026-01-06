@@ -1,10 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { shallowMount } from "@vue/test-utils";
-import MessageFeed from "@/views/MessageFeedView.vue";
+import MessageFeedView from "@/views/MessageFeedView.vue";
 
-describe("MessageFeed.vue", () => {
+describe("MessageFeedView.vue", () => {
   it("renders component", () => {
-    const wrapper = shallowMount(MessageFeed, {
+    const wrapper = shallowMount(MessageFeedView, {
       stubs: ["router-link"],
     });
     expect(wrapper.find("h2").text()).toBe("Message Feed");
