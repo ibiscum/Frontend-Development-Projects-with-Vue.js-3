@@ -21,9 +21,8 @@ describe("Adding a New Comment", () => {
     cy.get('[data-test-id="new-comment-button"]').click();
     cy.get('[data-test-id="new-comment-editor"]').should("be.visible");
 
-    cy.get('[data-test-id="new-comment-editor"]')
-      .type("Just saying...")
-      .should("have.value", "Just saying...");
+    cy.get('[data-test-id="new-comment-editor"]').type("Just saying..."); 
+    cy.get('[data-test-id="new-comment-editor"]').should("have.value", "Just saying...");
   });
   it("the new comment editor should have a submit button", () => {
     cy.visit("/");
@@ -53,11 +52,8 @@ describe("Adding a New Comment", () => {
 
     cy.get('[data-test-id="new-comment-editor"]').type("Just saying...");
 
-    cy.get('[data-test-id="new-comment-submit"]')
-      .should("not.be.disabled")
-      .click()
-      .should("have.class", "spinner")
-      .should("be.disabled");
+    cy.get('[data-test-id="new-comment-submit"]').should("not.be.disabled").click();
+    cy.get('[data-test-id="new-comment-submit"]').should("have.class", "spinner").should("be.disabled");
 
     // eventually, the spinner should stop showing
     cy.get('[data-test-id="new-comment-submit"]')
