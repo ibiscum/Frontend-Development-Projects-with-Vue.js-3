@@ -1,5 +1,5 @@
 {
-  "name": "activity12.01",
+  "name": "@chapter-12/activity12.01",
   "version": "0.0.0",
   "type": "module",
   "private": true,
@@ -13,8 +13,6 @@
     "test:unit:ci": "cypress run --component --quiet --reporter spec",
     "lint": "eslint --fix ."
   },
-  "devDependencies": {
-    "eslint": "^9.39.2",
-    "eslint-plugin-cypress": "^5.2.1"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
