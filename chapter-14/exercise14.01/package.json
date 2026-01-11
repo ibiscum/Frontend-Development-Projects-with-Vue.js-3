@@ -7,9 +7,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint --fix",
-    "test:e2e": "vue-cli-service test:e2e"
+    "lint": "eslint --fix"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
 }

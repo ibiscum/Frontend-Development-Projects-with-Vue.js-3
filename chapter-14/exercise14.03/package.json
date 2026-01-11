@@ -3,9 +3,9 @@
   "description": "Submitting state spinner",
   "version": "0.1.0",
   "private": true,
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vite",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e"
