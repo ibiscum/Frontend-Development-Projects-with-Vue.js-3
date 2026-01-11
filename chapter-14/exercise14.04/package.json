@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --fix .",
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {},
