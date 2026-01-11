@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
 
-export const userPreferencesStore = defineStore({
-  id: "userPreferences",
+export const userPreferencesStore = defineStore('userPreferences', {
   state: () => ({
     dismissedSubscriberBanner: false,
     acceptedCookie: false,

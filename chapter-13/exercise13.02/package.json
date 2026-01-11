@@ -1,5 +1,5 @@
 {
-  "name": "exercise13.02",
+  "name": "@chapter-13/exercise13.02",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,11 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest --environment jsdom --root src/",
-    "lint": "eslint --fix"
+    "test:unit": "vitest --environment jsdom",
+    "lint": "eslint --fix ."
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

@@ -1,8 +1,8 @@
 {
-  "name": "exercise12.01",
+  "name": "@chapter-12/exercise12.01",
   "version": "0.0.0",
   "type": "module",
-  "private":true,
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,8 +12,6 @@
     "test:unit": "cypress open --component",
     "test:unit:ci": "cypress run --component --quiet --reporter spec"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
