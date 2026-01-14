@@ -42,7 +42,11 @@ defineExpose({ truncated, ellipsis });
       {{ ellipsis }}
     </p>
 
-    <router-link v-for="tag in tags" :key="tag" :to="`/tags/${tag}`">
+    <router-link
+      v-for="tag in tags"
+      :key="tag"
+      :to="`/tags/${tag}`"
+    >
       #{{ tag }}
     </router-link>
   </div>

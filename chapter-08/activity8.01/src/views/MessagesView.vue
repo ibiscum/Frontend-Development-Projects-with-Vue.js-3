@@ -7,8 +7,15 @@
       Editor
     </router-link>
     <router-view v-slot="{ Component }">
-      <transition name="fade" enter-active-class="zoom-in">
-        <component :is="Component" :list="messages" @list:update="addMessage" />
+      <transition
+        name="fade"
+        enter-active-class="zoom-in"
+      >
+        <component
+          :is="Component"
+          :list="messages"
+          @list:update="addMessage"
+        />
       </transition>
     </router-view>
   </div>
