@@ -9,8 +9,9 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "preview": "vite preview --port 5050",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix ."
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "eslint": "^10.0.0"
+  }
 }
