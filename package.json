@@ -1,5 +1,12 @@
 {
   "name": "frontend-development-projects-with-vue",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --fix"
+  },
+  "dependencies": {
+    "eslint": "^10.0.0"
+  }
 }
