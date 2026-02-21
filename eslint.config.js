@@ -2,7 +2,7 @@ import pluginVue from "eslint-plugin-vue";
 import globals from "globals";
 import js from "@eslint/js";
 import { globalIgnores } from "eslint/config";
-import pluginCypress from 'eslint-plugin-cypress/flat'
+import pluginCypress from 'eslint-plugin-cypress';
 
 export default [
   // add more generic rulesets here, such as:
