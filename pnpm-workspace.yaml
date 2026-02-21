@@ -16,6 +16,7 @@ packages:
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
+  - core-js
   - cypress
   - esbuild
   - nx
