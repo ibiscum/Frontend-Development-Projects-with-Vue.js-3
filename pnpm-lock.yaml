@@ -14,6 +14,9 @@ importers:
       eslint:
         specifier: ^10.0.0
         version: 10.0.0(jiti@2.6.1)
+      eslint-plugin-cypress:
+        specifier: ^6.0.0
+        version: 6.0.0(eslint@10.0.0(jiti@2.6.1))
       eslint-plugin-vue:
         specifier: ^10.8.0
         version: 10.8.0(eslint@10.0.0(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.0.0(jiti@2.6.1)))
@@ -1942,6 +1945,11 @@ packages:
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
+
+  eslint-plugin-cypress@6.0.0:
+    resolution: {integrity: sha512-J96t5BLt8lYSiQ5b4vZ2IpUcsAc3XOw9Esy5sFSvgbx4Od/MIwlbXM8QazrcbEKrKKsynOnyXzZwiAQTtGCEyA==}
+    peerDependencies:
+      eslint: '>=9'
 
   eslint-plugin-prettier@5.5.5:
     resolution: {integrity: sha512-hscXkbqUZ2sPithAuLm5MXL+Wph+U7wHngPBv9OMWwlP8iaflyxpjTYZkmdgB4/vPIhemRlBEoLrH7UC1n7aUw==}
@@ -5087,6 +5095,11 @@ snapshots:
   eslint-config-prettier@10.1.8(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
       eslint: 9.39.2(jiti@2.6.1)
+
+  eslint-plugin-cypress@6.0.0(eslint@10.0.0(jiti@2.6.1)):
+    dependencies:
+      eslint: 10.0.0(jiti@2.6.1)
+      globals: 17.3.0
 
   eslint-plugin-prettier@5.5.5(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@9.39.2(jiti@2.6.1)))(eslint@9.39.2(jiti@2.6.1))(prettier@3.8.1):
     dependencies:
