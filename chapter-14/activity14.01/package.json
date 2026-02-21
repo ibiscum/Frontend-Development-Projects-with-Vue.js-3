@@ -10,6 +10,7 @@
     "lint": "eslint --fix ."
   },
   "dependencies": {
-    "unfetch": "^5.0.0"
+    "unfetch": "^5.0.0",
+    "cypress": "^15.10.0"
   }
 }
