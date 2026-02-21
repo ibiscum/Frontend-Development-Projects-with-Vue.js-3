@@ -6,6 +6,8 @@ settings:
 
 importers:
 
+  .: {}
+
   chapter-01/activity1.01: {}
 
   chapter-01/exercise1.01:
