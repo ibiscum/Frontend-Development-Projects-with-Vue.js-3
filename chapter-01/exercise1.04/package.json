@@ -12,6 +12,6 @@
     "lint": "eslint --fix"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^4.0.6"
+    "@vitest/coverage-v8": "^4.1.0"
   }
 }

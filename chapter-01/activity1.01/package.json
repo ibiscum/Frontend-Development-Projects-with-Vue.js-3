@@ -12,6 +12,6 @@
     "lint": "eslint --fix ."
   },
   "dependencies": {
-    "eslint": "^10.0.0"
+    "eslint": "^10.0.3"
   }
 }

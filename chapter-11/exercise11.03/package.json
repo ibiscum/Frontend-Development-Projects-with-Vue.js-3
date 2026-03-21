@@ -10,6 +10,6 @@
     "test:unit": "vitest --environment jsdom"
   },
   "dependencies": {
-    "vue-router": "^4.6.4"
+    "vue-router": "^5.0.4"
   }
 }
