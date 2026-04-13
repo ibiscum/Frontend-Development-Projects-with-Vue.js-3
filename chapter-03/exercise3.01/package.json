@@ -10,6 +10,6 @@
     "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "vite-plugin-vue-devtools": "^8.1.0"
+    "vite-plugin-vue-devtools": ">=8.1.0"
   }
 }
