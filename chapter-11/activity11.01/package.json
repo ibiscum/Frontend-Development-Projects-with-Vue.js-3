@@ -10,6 +10,6 @@
     "test:unit": "vitest --environment jsdom"
   },
   "dependencies": {
-    "@pinia/testing": "^1.0.3"
+    "@pinia/testing": "^2.0.1"
   }
 }
