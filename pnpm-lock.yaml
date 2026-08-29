@@ -315,8 +315,8 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2(vite@8.0.16(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.9.0))
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.3
+        version: 4.3.3
 
   chapter-09/exercise9.01:
     dependencies:
@@ -324,8 +324,8 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2(vite@8.0.16(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.9.0))
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.3
+        version: 4.3.3
 
   chapter-09/exercise9.02:
     dependencies:
@@ -333,8 +333,8 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2(vite@8.0.16(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.9.0))
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.3
+        version: 4.3.3
 
   chapter-09/exercise9.03: {}
 
@@ -402,8 +402,8 @@ importers:
         specifier: ^8.5.23
         version: 8.5.25
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.3
+        version: 4.3.3
 
   chapter-14/exercise14.02:
     dependencies:
@@ -411,8 +411,8 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2(vite@8.0.16(@types/node@25.6.0)(jiti@2.6.1)(yaml@2.9.0))
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.3
+        version: 4.3.3
 
   chapter-14/exercise14.03:
     dependencies:
@@ -430,8 +430,8 @@ importers:
         specifier: ^10.8.0
         version: 10.8.0(eslint@10.7.0(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.7.0(jiti@2.6.1)))
       tailwindcss:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.3
+        version: 4.3.3
 
   chapter-14/exercise14.04: {}
 
@@ -2655,6 +2655,9 @@ packages:
 
   tailwindcss@4.2.2:
     resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
+
+  tailwindcss@4.3.3:
+    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
 
   tapable@2.3.2:
     resolution: {integrity: sha512-1MOpMXuhGzGL5TTCZFItxCc0AARf1EZFQkGqMm7ERKj8+Hgr5oLvJOVFcC+lRmR8hCe2S3jC4T5D7Vg/d7/fhA==}
@@ -5212,6 +5215,8 @@ snapshots:
       strip-ansi: 6.0.1
 
   tailwindcss@4.2.2: {}
+
+  tailwindcss@4.3.3: {}
 
   tapable@2.3.2: {}
 
